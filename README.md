@@ -1,2 +1,2 @@
-# ronaldgaliwango
-This is a Github website of Ronald Galiwango (PhD, MPhil, BSc). This website was created using instructions from https://www.andreashandel.com/post/github-website/.
+# Ronald Galiwango Website
+Welcome to the Github repository containg files for the personal website of Ronald Galiwango. The website can be found [here](https://www.ronaldgaliwango.com/).
