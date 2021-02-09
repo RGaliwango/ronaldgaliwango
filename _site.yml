@@ -1,4 +1,4 @@
-name: "My new website"
+name: "Ronald Galiwango website"
 output_dir: 'docs'
 output:
   html_document:
