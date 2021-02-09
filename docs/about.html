@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>About</title>
+
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    About
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="./about.html">Learn more about me</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="./pollution.html">Air pollution, Human Mobility Transmission of Respiratory Pathogens</a>
+    </li>
+    <li>
+      <a href="./covid.html">COVID-19 Modelling</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="./publications.html">Publications</a>
+</li>
+<li>
+  <a href="./contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/RGaliwango/ronaldgaliwango">
+    <span class="fas fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">About</h1>
+
+</div>
+
+
+<div id="current-positions" class="section level2">
+<h2>Current position(s)</h2>
+<p>I am currently a Postdoctoral fellow under <a href="https://www.breca.mak.ac.ug/">Nurturing Genomics and Bioinformatics Research Capacity in Africa (BRecA)</a>, a programme funded by US’ <a href="https://www.nih.gov/">National Institutes of Health (NIH)</a>. I also teach on the MSc/PhD programme at the <a href="https://ace.idi.co.ug/">African Centre of Excellence in Bioinformatics and Data Sciences (ACE)</a>, <a href="https://www.mak.ac.ug/">Makerere University</a>.</p>
+<p>I have a strong passion for mentorship, having been a beneficially myself under the Makerere University/UVRI Infection and Immunity Research Training Programme (MUII, now <a href="http://www.muii.org.ug/">MUII-plus</a>) where I was mentored by MUII alumni in Bioinformatics and Computational Biology (BCB). The arrangement has now evolved into a formal mentorship programme known as the <a href="http://www.muii.org.ug/mentoring-programme/">MUII-plus mentorship programme</a>. I provide mentorship in the areas of BCB to postgraduate students and early career researchers interested in BCB. I also supervise projects of masters and doctoral students on the MSC/PhD programme in Bioinformatics at <a href="https://www.mak.ac.ug/">Makerere University</a> at the <a href="https://ace.idi.co.ug/">African Centre of Excellence in Bioinformatics and Data Sciences (ACE)</a>.</p>
+<p>I am also a reviewer for the International Journal of Infectious Diseases.</p>
+</div>
+<div id="professional-experienceprevious-positions" class="section level2">
+<h2>Professional Experience/Previous Positions</h2>
+<p>I have previously worked under the Medical Research Council (MRC) at the Uganda Virus Research Institute (UVRI) where we investigated the <a href="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0005440">effect of Schistosoma mansoni infection on the immunogenicity of a candidate TB vaccine, MVA85A, in BCG-vaccinated African adolescents</a>. We found increased levels of Ag85A-specific cellular responses following immunization with BCG but no differences between Schistosoma mansoni (Sm)-infected and uninfected participants. Sm infection was associated with higher pre-immunisation Ag85A-specific IgG4 but with no change in antibody levels following immunisation. While at UVRI, I also worked on a modeling project for simulating the transmission dynamics of HIV-1 among the fisher folk, sex workers and the general population in Uganda using an individual-based stochastic model.</p>
+<p>I was appointed an external examiner for an MSc. Bioinformatics research project (thesis and presentation) at Pwani University, Kenya in 2020.</p>
+</div>
+<div id="professional-memberships" class="section level2">
+<h2>Professional Memberships</h2>
+<p>Membership to the Uganda Mathematical Society. Member since 2013.</p>
+</div>
+<div id="education" class="section level2">
+<h2>Education</h2>
+<p>I hold a PhD in Epidemiology from the University of Georgia, USA (Computational Epidemiology: Bioinformatics + Epidemiology) (2019). For the PhD dissertation, I used Mycobacterium Tuberculosis (Mtb) Whole Genome Sequence (WGS) analysis of pathogen isolates of index Tuberculosis (TB) patients; Social Network Analysis (SNA) of social networks of index TB patients and their frequency matched controls; and Mathematical and Statistical modeling by simulating a stochastic TB epidemic model on the observed social network and finding factors associated with transmission, respectively to understand endemic transmission dynamics of Mtb in an urban setting in Sub-Saharan Africa. My PhD studies were funded by a Fogarty-NIH PhD fellowship (Award Number D43TW010045).</p>
+<p>I hold an MPhil (Master of Philosophy) in Computational Biology from the University of Cambridge, UK (2015), where for the master’s degree project I developed a method to explore fatty acid profiles from epidemiological data as a tool for understanding metabolic and nutritional health and disease. This work was presented at the 1st International Conference on Computational Modeling of Metabolic Health, Inflammation and Diabetes in Cambridge, UK. The degree was funded by a Commonwealth Scholarship and a Commonwealth, Cambridge and European Trust fellowship.</p>
+<p>I also hold a first-class honors undergraduate degree (mathematics major, statistics minor) from Makerere University, Uganda (2014). For my undergraduate internship, in a combined effort with a colleague, we developed a spirometer calculator for African school children that is used to predict outcomes in a study on Asthma. The degree was done on sponsorship by the government of Uganda (National Merit).</p>
+</div>
+<div id="other-training-workshops-short-courses-and-conferences-attended" class="section level2">
+<h2>Other training, workshops, short courses and conferences attended</h2>
+<p>I attended the Infectious Disease Modelling Course - by the GeMVi Team, University of Warwick (2020-2021); Workshop 1: Mathematical deterministic modelling; Workshop 2: Use of maximum likelihood estimation to analyse super-spreading behaviour in novel disease outbreaks; Workshop 3: Stochastic Modeling -the Gillespie method; Workshop 4: Modelling Spatial Spread.</p>
+<p>I have done <a href="https://www.datacamp.com">DataCamp</a> courses in data manipulation and analysis: Introduction to Machine Learning, Longitudinal Data Analysis in R, Interactive Data Visualization with plotly in R, Analyzing Social Media Data in R, Reporting with R Markdown, Writing functions in R, Intermediate R, Intermediate R – Practice, Introduction to R, Working with R Studio IDE (Part 1 and Part 2), Building Web Applications in R with Shiny, Building Web Applications in R with Shiny – Case studies and Building Dashboards with shinydashboard.</p>
+<p>I attended the 10th Annual Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID): University of Washington, Seattle, WA (MCMC I for Infectious Diseases; Evolutionary Dynamics and Molecular Epidemiology of Viruses (BEAST); Spatial Statistics in Epidemiology and Public Health) (2018).</p>
+<p>I attended the 4th Annual Summer Institute in Infectious Diseases and Global Health: McGill University, Montreal-Canada (Genomic Epidemiology of Infectious Diseases: Introduction to genomic epidemiology and Whole Genome Sequence (WGS) data Analysis; Using WGS to infer transmission of bacterial pathogens; using WGS to predict antimicrobial resistance, Role of WGS in public health) (2018).</p>
+<p>I attended the 2nd IBS (International Biometric Society) International conference Uganda Region Conference with a short course in Longitudinal Data Analysis, Mildmay Uganda (2015).</p>
+<p>I have done ethics training such as CITI online ethics courses (Bio-Medical Research, Biomedical Responsible Conduct of Research Course, GCP for Clinical Trials with Investigational Drugs &amp; Biologics (ICH Focus), Social &amp; Behavioral Research (children, international, internet, pregnant women, prisoners), Social &amp; Behavioral Responsible Conduct of Research Course (2017)), the USG (University Systems of Georgia) Ethics Basic Course: Public Health (2016), ICH Good Clinical Practice Online course (2015) and Protecting Human Subject Research Participants Online course (2015). I have also done the Secure UGA course (EITS) online training which is a security awareness training program on protecting sensitive &amp; restricted data and risk awareness (2016).</p>
+<p>I have attended several Bioinformatics workshops such as (i) the Functional Genomics and Systems Biology Workshop: Gene Expression Data Analysis, Uganda Virus Research Institute (2015); (ii) the Introduction to Microarray data Analysis using R, Workshop, Uganda Virus Research Institute (2014); (iii) the Bioinformatics in the tropics Workshop, Uganda Virus Research Institute (2014); the (iv) Bioinformatics and Genomics Workshop, Makerere University (2014); (v) the Introduction to R for Data Analysis Workshop, Uganda Virus Research Institute (2013); and (vi) the Host-Pathogen Interactions and bioinformatics workshop at Makerere University, Uganda in 2017.</p>
+<p>I have also done a short course in High-performance computing (HPC) and Python Language Basics at the Georgia Advanced Computing Resource Center (GACRC) of the University of Georgia (UGA) (2018).</p>
+</div>
+<div id="research-interests" class="section level2">
+<h2>Research Interests</h2>
+<p>My research interests lie in using computational approaches to answer epidemiology research questions, with a focus on using contact/social networks in addition to other epidemiological data of individuals, pathogen genomic data, machine learning &amp; data science, statistical analysis, mathematical and predictive modelling and simulations to understand the transmission of infectious diseases and the interplay between infectious and non-communicable diseases.</p>
+</div>
+<div id="notable-skills" class="section level2">
+<h2>Notable Skills</h2>
+<ul>
+<li>Epidemiological study design, conduct and analysis for cross-sectional, ecological, cohort, case- control, clinical trials and hybrid designs including bias and confounding analysis and ethics assessments</li>
+<li>Social media data analysis</li>
+<li>Web scraping</li>
+<li>Data science/machine learning/artificial intelligence</li>
+<li>Statistical data analysis including biologic/bioinformatics data (such as whole genome sequence data - phylogenetics and transmission inference; gene expression data - gene expression analysis, gene annotation enrichment and pathways analysis), traditional epidemiologic data and ’big data’</li>
+<li>In order of proficiency: Statistical data analysis and programming with ’R’ and Python</li>
+<li>Formulation and analysis of mathematical and statistical models; compartmental, stochastic, individual based, population level, network models</li>
+<li>Network building, analysis &amp; inference including social networks and biological networks</li>
+<li>GWAS data analysis</li>
+<li>Reproducible research with LaTeX, knitr and R Markdown</li>
+<li>Version control with Git, Guthub and GitKraken</li>
+<li>Reference management with Mendeley, Zotero and EndNote</li>
+</ul>
+</div>
+<div id="awards-distinctions-and-prizes" class="section level2">
+<h2>Awards, distinctions and prizes</h2>
+<ul>
+<li>BRecA (Nurturing Genomics and Bioinformatics Research Capacity in Africa) Postdoctoral Fellowship Award, Makerere University; funded by the NIH Common Fund: NIH-Forgaty International Center (2020-2021) (Award Number U2RTW010627)</li>
+<li>Fogarty-NIH Phd fellowship; University of Georgia, College of Public Health, Center for Global Health (2016-2020/21) (Award Number D43TW010045)</li>
+<li>Commonwealth scholarship tenable at the University of Cambridge, UK (2014-2015)</li>
+<li>Commonwealth, Cambridge and European Trust scholarship (2014-2015)</li>
+<li>Winner, Uganda Virus Research Institute (UVRI) Internship Competition (2013)</li>
+<li>Wellcome Trust Strategic Internship Award in Bioinformatics and Computational Biology</li>
+<li>Fourth prize, 2012 National University Mathematics Contest (Uganda)</li>
+<li>Admitted to Makerere University for the undergraduate degree on government sponsorship (national merit)</li>
+<li>Merit based fees bursary at high school</li>
+</ul>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+---
+title: "Ronald Galiwango"
+output: 
+  html_document:
+    toc: FALSE
+---
+
+
+
+```{r echo=FALSE, out.width="200px", fig.align='left', fig.cap="Ronald Galiwango, Postdoc NIH funded BRecA program"}
+
+knitr::include_graphics("photo.jpg") 
+```
+
+
+I am currently a Postdoctoral fellow under [Nurturing Genomics and Bioinformatics Research Capacity in Africa (BRecA)](https://www.breca.mak.ac.ug/), a programme funded by US' [National Institutes of Health (NIH)](https://www.nih.gov/). I also teach on the MSc/PhD programme at the [African Centre of Excellence in Bioinformatics and Data Sciences (ACE)](https://ace.idi.co.ug/), [Makerere University](https://www.mak.ac.ug/). I am affiliated to the [Makerere University/UVRI Infection and Immunity Research Training Programme (MUII-plus)](https://www.muii.org.ug/) and the [Centre for Computational Biology, Uganda Christian University](https://github.com/compbiorg/).
+
+
+# News
+
+Dec 2020: We were awarded a grant by the Global South [AI4COVID Program](http://covidsouth.ai/grantees/) titled "End-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda (COAST).
+
+

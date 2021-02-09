@@ -1,0 +1,84 @@
+---
+title: "About"
+output: html_document
+---
+
+## Current position(s)
+
+I am currently a Postdoctoral fellow under [Nurturing Genomics and Bioinformatics Research Capacity in Africa (BRecA)](https://www.breca.mak.ac.ug/), a programme funded by US' [National Institutes of Health (NIH)](https://www.nih.gov/). I also teach on the MSc/PhD programme at the [African Centre of Excellence in Bioinformatics and Data Sciences (ACE)](https://ace.idi.co.ug/), [Makerere University](https://www.mak.ac.ug/).
+
+I have a strong passion for mentorship, having been a beneficially myself under the Makerere University/UVRI Infection and Immunity Research Training Programme (MUII, now [MUII-plus](http://www.muii.org.ug/)) where I was mentored by MUII alumni in Bioinformatics and Computational Biology (BCB). The arrangement has now evolved into a formal mentorship programme known as the [MUII-plus mentorship programme](http://www.muii.org.ug/mentoring-programme/). I provide mentorship in the areas of BCB to postgraduate students and early career researchers interested in BCB. I also supervise projects of masters and doctoral students on the MSC/PhD programme in Bioinformatics at [Makerere University](https://www.mak.ac.ug/) at the [African Centre of Excellence in Bioinformatics and Data Sciences (ACE)](https://ace.idi.co.ug/). 
+
+I am also a reviewer for the International Journal of Infectious Diseases.
+
+## Professional Experience/Previous Positions
+
+I have previously worked under the Medical Research Council (MRC) at the Uganda Virus Research Institute (UVRI) where we investigated the [effect of Schistosoma mansoni infection on the immunogenicity of a candidate TB vaccine, MVA85A, in BCG-vaccinated African adolescents](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0005440). We found increased levels of Ag85A-specific cellular responses following immunization with BCG but no differences between Schistosoma mansoni (Sm)-infected and uninfected participants. Sm infection was associated with higher pre-immunisation Ag85A-specific IgG4 but with no change in antibody levels following immunisation. 
+While at UVRI, I also worked on a modeling project for simulating the transmission dynamics of HIV-1 among the fisher folk, sex workers and the general population in Uganda using an individual-based stochastic model.
+
+I was appointed an external examiner for an MSc. Bioinformatics research project (thesis and presentation) at Pwani University, Kenya in 2020.
+
+
+## Professional Memberships
+
+Membership to the Uganda Mathematical Society. Member since 2013.
+
+## Education
+
+I hold a PhD in Epidemiology from the University of Georgia, USA (Computational Epidemiology: Bioinformatics + Epidemiology) (2019). For the PhD dissertation, I used Mycobacterium Tuberculosis (Mtb) Whole Genome Sequence (WGS) analysis of pathogen isolates of index Tuberculosis (TB) patients; Social Network Analysis (SNA) of social networks of index TB patients and their frequency matched controls; and Mathematical and Statistical modeling by simulating a stochastic TB epidemic model on the observed social network and finding factors associated with transmission, respectively to understand endemic transmission dynamics of Mtb in an urban setting in Sub-Saharan Africa. My PhD studies were funded by a Fogarty-NIH PhD fellowship (Award Number D43TW010045).
+
+I hold an MPhil (Master of Philosophy) in Computational Biology from the University of Cambridge, UK (2015), where for the master’s degree project I developed a method to explore fatty acid profiles from epidemiological data as a tool for understanding metabolic and nutritional health and disease. This work was presented at the 1st International Conference on Computational Modeling of Metabolic Health, Inflammation and Diabetes in Cambridge, UK. The degree was funded by a Commonwealth Scholarship and a Commonwealth, Cambridge and European Trust fellowship.
+
+I also hold a first-class honors undergraduate degree (mathematics major, statistics minor) from Makerere University, Uganda (2014). For my undergraduate internship, in a combined effort with a colleague, we developed a spirometer calculator for African school children that is used to predict outcomes in a study on Asthma. The degree was done on sponsorship by the government of Uganda (National Merit).
+
+## Other training, workshops, short courses and conferences attended
+
+I attended the Infectious Disease Modelling Course - by the GeMVi Team, University of Warwick (2020-2021); Workshop 1: Mathematical deterministic modelling; Workshop 2: Use of maximum likelihood estimation to analyse super-spreading behaviour in novel disease outbreaks; Workshop 3: Stochastic Modeling -the Gillespie method; Workshop 4: Modelling Spatial Spread.
+
+I have done [DataCamp](https://www.datacamp.com) courses in data manipulation and analysis: Introduction to Machine Learning, Longitudinal Data Analysis in R, Interactive Data Visualization with plotly in R, Analyzing Social Media Data in R, Reporting with R Markdown, Writing functions in R, Intermediate R, Intermediate R – Practice, Introduction to R, Working with R Studio IDE (Part 1 and Part 2), Building Web Applications in R with Shiny, Building Web Applications in R with Shiny – Case studies and Building Dashboards with shinydashboard. 
+
+I attended the 10th Annual Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID): University of Washington, Seattle, WA (MCMC I for Infectious Diseases; Evolutionary Dynamics and Molecular Epidemiology of Viruses (BEAST); Spatial Statistics in Epidemiology and Public Health) (2018). 
+
+I attended the 4th Annual Summer Institute in Infectious Diseases and Global Health: McGill University, Montreal-Canada (Genomic Epidemiology of Infectious Diseases: Introduction to genomic epidemiology and Whole Genome Sequence (WGS) data Analysis; Using WGS to infer transmission of bacterial pathogens; using WGS to predict antimicrobial resistance, Role of WGS in public health) (2018). 
+
+I attended the 2nd IBS (International Biometric Society) International conference Uganda Region Conference with a short course in Longitudinal Data Analysis, Mildmay Uganda (2015). 
+
+I have done ethics training such as CITI online ethics courses (Bio-Medical Research, Biomedical Responsible Conduct of Research Course, GCP for Clinical Trials with Investigational Drugs & Biologics (ICH Focus), Social & Behavioral Research (children, international, internet, pregnant women, prisoners), Social & Behavioral Responsible Conduct of Research Course (2017)), the USG (University Systems of Georgia) Ethics Basic Course: Public Health (2016), ICH Good Clinical Practice Online course (2015) and Protecting Human Subject Research Participants Online course (2015). I have also done the Secure UGA course (EITS) online training which is a security awareness training program on protecting sensitive & restricted data and risk awareness (2016).
+
+I have attended several Bioinformatics workshops such as (i) the Functional Genomics and Systems Biology Workshop: Gene Expression Data Analysis, Uganda Virus Research Institute (2015); (ii) the Introduction to Microarray data Analysis using R, Workshop, Uganda Virus Research Institute (2014); (iii) the Bioinformatics in the tropics Workshop, Uganda Virus Research Institute (2014); the (iv) Bioinformatics and Genomics Workshop, Makerere University (2014); (v) the Introduction to R for Data Analysis Workshop, Uganda Virus Research Institute (2013); and (vi) the Host-Pathogen Interactions and bioinformatics workshop at Makerere University, Uganda in 2017.
+
+I have also done a short course in High-performance computing (HPC) and Python Language Basics at the Georgia Advanced Computing Resource Center (GACRC) of the University of Georgia (UGA) (2018). 
+
+## Research Interests
+
+My research interests lie in using computational approaches to answer epidemiology research questions, with a focus on using contact/social networks in addition to other epidemiological data of individuals, pathogen genomic data, machine learning & data science, statistical analysis, mathematical and predictive modelling and simulations to understand the transmission of infectious diseases and the interplay between infectious and non-communicable diseases.
+
+## Notable Skills
+
+* Epidemiological study design, conduct and analysis for cross-sectional, ecological, cohort, case- control, clinical trials and hybrid designs including bias and confounding analysis and ethics assessments
+* Social media data analysis
+* Web scraping
+* Data science/machine learning/artificial intelligence
+* Statistical data analysis including biologic/bioinformatics data (such as whole genome sequence data - phylogenetics and transmission inference; gene expression data - gene expression analysis, gene annotation enrichment and pathways analysis), traditional epidemiologic data and ’big data’
+* In order of proficiency: Statistical data analysis and programming with ’R’ and Python
+* Formulation and analysis of mathematical and statistical models; compartmental, stochastic, individual based, population level, network models
+* Network building, analysis & inference including social networks and biological networks
+* GWAS data analysis
+* Reproducible research with LaTeX, knitr and R Markdown
+* Version control with Git, Guthub and GitKraken
+* Reference management with Mendeley, Zotero and EndNote
+
+
+## Awards, distinctions and prizes
+
+* BRecA (Nurturing Genomics and Bioinformatics Research Capacity in Africa) Postdoctoral Fellowship Award, Makerere University; funded by the NIH Common Fund: NIH-Forgaty International Center (2020-2021) (Award Number U2RTW010627)
+* Fogarty-NIH Phd fellowship; University of Georgia, College of Public Health, Center for Global Health (2016-2020/21) (Award Number D43TW010045)
+* Commonwealth scholarship tenable at the University of Cambridge, UK (2014-2015)
+* Commonwealth, Cambridge and European Trust scholarship (2014-2015)
+* Winner, Uganda Virus Research Institute (UVRI) Internship Competition (2013)
+* Wellcome Trust Strategic Internship Award in Bioinformatics and Computational Biology
+* Fourth prize, 2012 National University Mathematics Contest (Uganda)
+* Admitted to Makerere University for the undergraduate degree on government sponsorship (national merit)
+* Merit based fees bursary at high school
+
+

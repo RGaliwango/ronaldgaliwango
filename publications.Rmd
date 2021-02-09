@@ -1,0 +1,20 @@
+---
+title: "Publications"
+output: html_document
+---
+
+1.	Wajja A, Kizito D, Nassanga B, Nalwoga A, Kabagenyi J, Kimuda S, Galiwango R, Mutonyi G, Vermaak S, Satti I, Verweij J, Tukahebwa E, Cose S, Levin J, Kaleebu P, Elliott AM, McShane H. The effect of current Schistosoma mansoni infection on the immunogenicity of a candidate TB vaccine, MVA85A, in BCG-vaccinated adolescents: An open-label trial. PLoS Negl Trop Dis. 2017 May;11(5): e0005440. PubMed PMID: 28472067; PubMed Central PMCID: PMC5417418. 
+
+2.	Conference Abstract: James Smith: James Smith, Ronald Galiwango, Argyris Zardilis, Albert Koulman & Julian Grin (2015). Stochastic Process & Mixture Models of Fatty Acid & Lipid Metabolism form a Novel Strategy for Obtaining Status Biomarkers; MMH 2015 1st International Conference on Computational Modeling of Metabolic Health, Inflammation and Diabetes; University of Cambridge, Cambridge, UK.
+
+3.	Contributor to R package DSAIDE. Infectious Disease Surveillance App: Handel A (2017). Learning infectious disease epidemiology in a modern framework. PLoS Computational Biology, 13(10), e1005642. https://doi.org/10.1371/journal.pcbi.1005642
+
+4.	Kiragga, A., Kitayimbwa, J., Galiwango, R. and Mbonye, A., (2020, May 9). Dons Advise on Lockdown Lifting. New Vision, p.26. Available online at: https://www.pmldaily.com/investigations/special-reports/2020/05/v.html
+
+5.	Kiragga, A., Kitayimbwa, J., Galiwango, R. and Mbonye, A., (2020, May 18). COVID-19: Experts Caution on Exclusive Use of Masks. New Vision, p.4. Available online at: https://www.pmldaily.com/investigations/special-reports/2020/05/policybrief-experts-warn-that-exclusive-use-of-face-masks-may-not-be-useful-as-lifting-of-covid-19-lockdown-beckons.html
+
+6.	Galiwango, Ronald and Kitayimbwa, John and Kiragga, Agnes N. and Atkins, Katherine E. and Brown, Andrew Leigh and Mbonye, Anthony K., Modelling the Impact and Public Health Re- sponse to COVID-19 in Uganda (6/18/2020). Available at SSRN: https://ssrn.com/abstract=3633199 or http://dx.doi.org/10.2139/ssrn.3633199  
+
+Complete list of works and publications can be found using ORCID ID: https://orcid.org/0000-0002-5962-151X
+
+

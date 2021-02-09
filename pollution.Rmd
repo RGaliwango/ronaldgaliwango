@@ -1,0 +1,6 @@
+---
+title: "Air Pollution, Human Mobility and Transmission of Respiratory Pathogens.Rmd"
+output: html_document
+---
+
+I am currently working on a project on Air pollution, Human Mobility and Transmission of respiratory pathogens, SARS-CoV-2 inclusive. This project is part of my Postdoc with [Nurturing Genomics and Bioinformatics Research Capacity in Africa (BRecA)](https://www.breca.mak.ac.ug/). For this project we are working with our collaborators [AirQo](https://www.airqo.net/).

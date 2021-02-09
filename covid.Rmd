@@ -1,0 +1,7 @@
+---
+title: "Modelling the impact and public health response to COVID-19"
+output: html_document
+---
+
+With other colleagues at the [Centre for Computational Biology, Uganda Christian University](https://github.com/compbiorg/), we modelled SARS-CoV-2 transmission dynamics in Uganda and published two key policy briefs ([brief 1](https://www.pmldaily.com/investigations/special-reports/2020/05/v.html) and [brief 2](https://www.pmldaily.com/investigations/special-reports/2020/05/policybrief-experts-warn-that-exclusive-use-of-face-masks-may-not-be-useful-as-lifting-of-covid-19-lockdown-beckons.html)) and a [manuscript](http://dx.doi.org/10.2139/ssrn.3633199). This work informed that truck drivers posed a threat to spark a community epidemic in the country, which has actually been the case. Our models also showed that social distancing combined with use of face-masks would contain the epidemic but exclusive use of face-masks would not.
+
