@@ -1,6 +1,5 @@
 name: "ronaldgaliwangowebsite"
 title: "Home"
-headers: file.mtime(knitr::current_input())
 type: inverse
 left:
   - text: "About"
