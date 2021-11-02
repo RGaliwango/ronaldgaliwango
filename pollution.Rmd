@@ -1,5 +1,5 @@
 ---
-title: "Air Pollution, Human Mobility and Transmission of Respiratory Pathogens.Rmd"
+title: "Air Pollution, Human Mobility and Transmission of Respiratory Pathogens"
 output: html_document
 ---
 

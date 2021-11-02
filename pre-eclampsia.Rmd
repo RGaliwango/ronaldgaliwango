@@ -1,0 +1,6 @@
+---
+title: "pre-eclampsia"
+output: html_document
+---
+
+I am part of a project on maternal health entitled “Future maternal cardiovascular health after pre-eclampsia in an indigenous African population”. This project seeks to investigate the development of hypertension and future Cardiovascular Disease (CVD) risk in a well-characterized cohort of indigenous African women, half of whom had pre-eclampsia and half of whom were normotensive.
