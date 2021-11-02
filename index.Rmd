@@ -25,6 +25,18 @@ My focus is on using the above computational approaches and data to aid in: Unde
 
 # News
 
-Dec 2020: We were awarded a grant by the Global South [AI4COVID Program](http://covidsouth.ai/grantees/) titled "End-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda (COAST).
+Oct 2021: Our manuscript entitled "Employing phylogenetic tree shape statistics to resolve the underlying host population structure" has been accepted for publication in BMC Bioinformatics.
 
+Sep 2021: We have been awarded a U2R training grant by the US National Institutes of Health (NIH) for a project titled "Makerere University Data Science Research Training to Strengthen Evidence-Based Health Innovation, Intervention and Policy (MakDARTA)"
 
+Sep 2021: Our manuscript entitled "Bioinformatics Mentorship in a Resource Limited Setting" has been published in Briefings in Bioinformatics.
+
+Sep 2021: Our manuscript entitled "Association between tuberculosis in men and social network structure in Kampala, Uganda" has been published in BMC Infectious Diseases.
+
+Jun 2021: Our manuscript entitled "Assessing a transmission network of Mycobacterium tuberculosis in an African city using single nucleotide polymorphism threshold analysis" has been published in Microbiology Open.
+
+Dec 2020: We have been awarded a grant by the Global South [AI4COVID Program](http://covidsouth.ai/grantees/) titled "End-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda (COAST). Learn more about the project by visiting the project website: https://coastv1-a7dd67bb-d488-44c3-ba50.cranecloud.io/.
+
+Aug 2020: A pre-print of our manuscript entitled "Modelling the Impact and Public Health Response to COVID-19 in Uganda" is now live on SSRN.
+
+June 2020: I have been awarded a post-doc by the NIH funded BRecA program at Makerere University, Uganda,a program that aims to build Bioinformatics research capacity in Uganda and the African continent at large.
