@@ -29,7 +29,7 @@ Oct 2021: Our manuscript entitled "Employing phylogenetic tree shape statistics 
 
 Oct 2021: I attended the MUII-plus Infection and Immunity Symposium (2021) that showcased success stories and highlights of Infection and Immunity research (IIR) in Uganda, and forged a plan towards the future of IIR.
 
-Sep 2021: We have been awarded a U2R training grant by the US National Institutes of Health (NIH) for a project titled "Makerere University Data Science Research Training to Strengthen Evidence-Based Health Innovation, Intervention and Policy (MakDARTA)"
+Sep 2021: We have been awarded a U2R training grant by the US National Institutes of Health (NIH) for a project titled "Makerere University Data Science Research Training to Strengthen Evidence-Based Health Innovation, Intervention and Policy (MakDARTA)"; From 2021-09 to 2026-07; Grant No. 1U2RTW012116-01.
 
 Sep 2021: Our manuscript entitled "Bioinformatics Mentorship in a Resource Limited Setting" has been published in Briefings in Bioinformatics.
 
@@ -37,7 +37,8 @@ Sep 2021: Our manuscript entitled "Association between tuberculosis in men and s
 
 Jun 2021: Our manuscript entitled "Assessing a transmission network of Mycobacterium tuberculosis in an African city using single nucleotide polymorphism threshold analysis" has been published in Microbiology Open.
 
-Dec 2020: We have been awarded a grant by the Global South [AI4COVID Program](http://covidsouth.ai/grantees/) titled "End-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda (COAST). Learn more about the project by visiting the project website: https://coastv1-a7dd67bb-d488-44c3-ba50.cranecloud.io/.
+Dec 2020: We have been awarded a grant by the Global South [AI4COVID Program](http://covidsouth.ai/grantees/) titled "End-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda (COAST)"; Grant No. 109630-001/002. Learn more about the project by visiting the project website: https://coastv1-a7dd67bb-d488-44c3-ba50.cranecloud.io/.
+ 
 
 Aug 2020: A pre-print of our manuscript entitled "Modelling the Impact and Public Health Response to COVID-19 in Uganda" is now live on SSRN.
 
