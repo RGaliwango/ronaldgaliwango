@@ -12,6 +12,8 @@ left:
          href: ./pollution.html
        - text: "COVID-19 Modelling"
          href: ./covid.html
+       - text: "Pre-eclampsia"
+         href: ./pre-eclampsia.html
   - text: "Publications"
     href: ./publications.html
   - text: "Contact"
