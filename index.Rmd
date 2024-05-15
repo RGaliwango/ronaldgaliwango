@@ -7,7 +7,7 @@ output:
 
 
 
-```{r echo=FALSE, out.width="200px", fig.align='left', fig.cap="Ronald Galiwango, Postdoc NIH funded BRecA program"}
+```{r echo=FALSE, out.width="200px", fig.align='left', fig.cap="Ronald Galiwango, Bioinformatics/data scientist, The African Center of Excellence in Bioinformatics and Data Sciences, The Infectious Diseases Institute, Makerere University, Kampala, Uganda"}
 
 knitr::include_graphics("photo.jpg") 
 ```
