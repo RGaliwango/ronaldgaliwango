@@ -13,7 +13,7 @@ knitr::include_graphics("photo.jpg")
 ```
 
 
-I am currently a Postdoctoral fellow under [Nurturing Genomics and Bioinformatics Research Capacity in Africa (BRecA)](https://www.breca.mak.ac.ug/), a programme funded by US' [National Institutes of Health (NIH)](https://www.nih.gov/). I also teach on the MSc/PhD programme at the [African Centre of Excellence in Bioinformatics and Data Sciences (ACE)](https://ace.idi.co.ug/), [Makerere University](https://www.mak.ac.ug/). I am affiliated to the [Makerere University/UVRI Infection and Immunity Research Training Programme (MUII-plus)](https://www.muii.org.ug/) and the [Centre for Computational Biology, Uganda Christian University](https://github.com/compbiorg/).
+I am currently the Deputy Director and a Bioinformatics/data scientist at [The African Center of Excellence in Bioinformatics and Data Sciences (ACE-Uganda)](https://ace.idi.co.ug/), [The Infectious Diseases Institute](https://idi.mak.ac.ug/), [Makerere University](https://www.mak.ac.ug/), Kampala, Uganda]. I also teach on the MSc/PhD programme at [Makerere University](https://www.mak.ac.ug/) hosted at ACE-Uganda.
 
 My interest generally lies in using computational approaches to answer epidemiology research questions. 
 
