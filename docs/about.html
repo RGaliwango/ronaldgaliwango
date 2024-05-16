@@ -13,7 +13,7 @@
 
 <title>About</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
@@ -29,12 +29,12 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -44,6 +44,7 @@
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
     </style>
+
 
 
 
@@ -73,6 +74,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -130,11 +134,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -163,8 +171,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -172,16 +180,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -304,7 +305,7 @@ div.tocify {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -314,7 +315,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     About
      
     <span class="caret"></span>
@@ -326,7 +327,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Projects
      
     <span class="caret"></span>
@@ -373,51 +374,206 @@ div.tocify {
 
 <div id="current-positions" class="section level2">
 <h2>Current position(s)</h2>
-<p>I am currently a Postdoctoral fellow under <a href="https://www.breca.mak.ac.ug/">Nurturing Genomics and Bioinformatics Research Capacity in Africa (BRecA)</a>, a programme funded by US’ <a href="https://www.nih.gov/">National Institutes of Health (NIH)</a>. I also teach on the MSc/PhD programme at the <a href="https://ace.idi.co.ug/">African Centre of Excellence in Bioinformatics and Data Sciences (ACE)</a>, <a href="https://www.mak.ac.ug/">Makerere University</a>.</p>
-<p>I have a strong passion for mentorship, having been a beneficially myself under the Makerere University/UVRI Infection and Immunity Research Training Programme (MUII, now <a href="http://www.muii.org.ug/">MUII-plus</a>) where I was mentored by MUII alumni in Bioinformatics and Computational Biology (BCB). The arrangement has now evolved into a formal mentorship programme known as the <a href="http://www.muii.org.ug/mentoring-programme/">MUII-plus mentorship programme</a>. I provide mentorship in the areas of BCB to postgraduate students and early career researchers interested in BCB. I also supervise projects of masters and doctoral students on the MSC/PhD programme in Bioinformatics at <a href="https://www.mak.ac.ug/">Makerere University</a> at the <a href="https://ace.idi.co.ug/">African Centre of Excellence in Bioinformatics and Data Sciences (ACE)</a>.</p>
-<p>I am also a reviewer for the International Journal of Infectious Diseases.</p>
+<p>I am currently the Deputy Director and a Bioinformatics/data
+scientist at <a href="https://ace.idi.co.ug/">The African Center of
+Excellence in Bioinformatics and Data Sciences (ACE-Uganda)</a>, <a
+href="https://idi.mak.ac.ug/">The Infectious Diseases Institute</a>, <a
+href="https://www.mak.ac.ug/">Makerere University</a>, Kampala, Uganda.
+I also teach on the MSc/PhD Bioinformatics programme at <a
+href="https://www.mak.ac.ug/">Makerere University</a> hosted at
+ACE-Uganda.</p>
+<p>My research interests lie in using quantitative methodologies (e.g.,
+data science, mathematical modeling, bioinformatics and advanced
+statistical methodologies etc.) to answer epidemiology research
+questions as well as address bio-medical and public health problems,
+with a focus on Antimicrobial Resistance (AMR). This involves using
+innovative in-silico approaches for designing antimicrobial drug
+combination therapies, employing bioinformatics techniques to identify
+One-Health AMR transmission pathways, utilizing data science
+methodologies to guide antimicrobial stewardship initiatives and using
+machine learning techniques to predict clinical outcomes of patients
+with drug resistant infections. I also have a strong passion for
+training and mentorship having benefited from both. I believe in
+building a critical mass of quantitative scientists so as to redress the
+capacity gap and to perform and complete projects with immediate
+relevance to national and regional health issues.</p>
 </div>
-<div id="professional-experienceprevious-positions" class="section level2">
+<div id="professional-experienceprevious-positions"
+class="section level2">
 <h2>Professional Experience/Previous Positions</h2>
-<p>I have previously worked under the Medical Research Council (MRC) at the Uganda Virus Research Institute (UVRI) where we investigated the <a href="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0005440">effect of Schistosoma mansoni infection on the immunogenicity of a candidate TB vaccine, MVA85A, in BCG-vaccinated African adolescents</a>. We found increased levels of Ag85A-specific cellular responses following immunization with BCG but no differences between Schistosoma mansoni (Sm)-infected and uninfected participants. Sm infection was associated with higher pre-immunisation Ag85A-specific IgG4 but with no change in antibody levels following immunisation. While at UVRI, I also worked on a modeling project for simulating the transmission dynamics of HIV-1 among the fisher folk, sex workers and the general population in Uganda using an individual-based stochastic model.</p>
-<p>I was appointed an external examiner for an MSc. Bioinformatics research project (thesis and presentation) at Pwani University, Kenya in 2020.</p>
+<p>I have previously worked under the Medical Research Council (MRC) at
+the Uganda Virus Research Institute (UVRI) where we investigated the <a
+href="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0005440">effect
+of Schistosoma mansoni infection on the immunogenicity of a candidate TB
+vaccine, MVA85A, in BCG-vaccinated African adolescents</a>. We found
+increased levels of Ag85A-specific cellular responses following
+immunization with BCG but no differences between Schistosoma mansoni
+(Sm)-infected and uninfected participants. Sm infection was associated
+with higher pre-immunisation Ag85A-specific IgG4 but with no change in
+antibody levels following immunisation. While at UVRI, I also worked on
+a modeling project for simulating the transmission dynamics of HIV-1
+among the fisher folk, sex workers and the general population in Uganda
+using an individual-based stochastic model.</p>
+<p>I was a Senior Lecturer at the Uganda Christian University in 2021
+teaching Epidemiology, Biostatistics and Research Methodology.</p>
+<p>Between 2020 and 2021, I was a Computational Biologist at The Center
+for Computational Biology, Uganda Christian University.</p>
+<p>I was appointed an external examiner for an MSc. Bioinformatics
+research project (thesis and presentation) at Pwani University, Kenya in
+2020.</p>
 </div>
-<div id="professional-memberships" class="section level2">
-<h2>Professional Memberships</h2>
-<p>Membership to the Uganda Mathematical Society. Member since 2013.</p>
+<div id="professional-memberships-and-affiliations"
+class="section level2">
+<h2>Professional Memberships and affiliations</h2>
+<p>Member, Center for Computational Biology, Uganda Christian
+University.</p>
+<p>Honorary fellow, Makerere University/UVRI Infection and Immunity
+Research Training Programme (MUII-plus).</p>
 </div>
 <div id="education" class="section level2">
 <h2>Education</h2>
-<p>I hold a PhD in Epidemiology from the University of Georgia, USA (Computational Epidemiology: Bioinformatics + Epidemiology) (2019). For the PhD dissertation, I used Mycobacterium Tuberculosis (Mtb) Whole Genome Sequence (WGS) analysis of pathogen isolates of index Tuberculosis (TB) patients; Social Network Analysis (SNA) of social networks of index TB patients and their frequency matched controls; and Mathematical and Statistical modeling by simulating a stochastic TB epidemic model on the observed social network and finding factors associated with transmission, respectively to understand endemic transmission dynamics of Mtb in an urban setting in Sub-Saharan Africa. My PhD studies were funded by a Fogarty-NIH PhD fellowship (Award Number D43TW010045).</p>
-<p>I hold an MPhil (Master of Philosophy) in Computational Biology from the University of Cambridge, UK (2015), where for the master’s degree project I developed a method to explore fatty acid profiles from epidemiological data as a tool for understanding metabolic and nutritional health and disease. This work was presented at the 1st International Conference on Computational Modeling of Metabolic Health, Inflammation and Diabetes in Cambridge, UK. The degree was funded by a Commonwealth Scholarship and a Commonwealth, Cambridge and European Trust fellowship.</p>
-<p>I also hold a first-class honors undergraduate degree (mathematics major, statistics minor) from Makerere University, Uganda (2014). For my undergraduate internship, in a combined effort with a colleague, we developed a spirometer calculator for African school children that is used to predict outcomes in a study on Asthma. The degree was done on sponsorship by the government of Uganda (National Merit).</p>
+<p>I hold a PhD in Epidemiology from the University of Georgia, USA
+(Computational Epidemiology: Bioinformatics + Epidemiology) (2019). For
+the PhD dissertation, I used Mycobacterium Tuberculosis (Mtb) Whole
+Genome Sequence (WGS) analysis of pathogen isolates of index
+Tuberculosis (TB) patients; Social Network Analysis (SNA) of social
+networks of index TB patients and their frequency matched controls; and
+Mathematical and Statistical modeling by simulating a stochastic TB
+epidemic model on the observed social network and finding factors
+associated with transmission, respectively to understand endemic
+transmission dynamics of Mtb in an urban setting in Sub-Saharan Africa.
+My PhD studies were funded by a Fogarty-NIH PhD fellowship (Award Number
+D43TW010045).</p>
+<p>I hold an MPhil (Master of Philosophy) in Computational Biology from
+the University of Cambridge, UK (2015), where for the master’s degree
+project I developed a method to explore fatty acid profiles from
+epidemiological data as a tool for understanding metabolic and
+nutritional health and disease. This work was presented at the 1st
+International Conference on Computational Modeling of Metabolic Health,
+Inflammation and Diabetes in Cambridge, UK. The degree was funded by a
+Commonwealth Scholarship and a Commonwealth, Cambridge and European
+Trust fellowship.</p>
+<p>I also hold a first-class honors undergraduate degree (mathematics
+major, statistics minor) from Makerere University, Uganda (2014). For my
+undergraduate internship, in a combined effort with a colleague, we
+developed a spirometer calculator for African school children that is
+used to predict outcomes in a study on Asthma. The degree was done on
+sponsorship by the government of Uganda (National Merit).</p>
 </div>
-<div id="other-training-workshops-short-courses-and-conferences-attended" class="section level2">
-<h2>Other training, workshops, short courses and conferences attended</h2>
-<p>I attended the Infectious Disease Modelling Course - by the GeMVi Team, University of Warwick (2020-2021); Workshop 1: Mathematical deterministic modelling; Workshop 2: Use of maximum likelihood estimation to analyse super-spreading behaviour in novel disease outbreaks; Workshop 3: Stochastic Modeling -the Gillespie method; Workshop 4: Modelling Spatial Spread.</p>
-<p>I have done <a href="https://www.datacamp.com">DataCamp</a> courses in data manipulation and analysis: Introduction to Machine Learning, Longitudinal Data Analysis in R, Interactive Data Visualization with plotly in R, Analyzing Social Media Data in R, Reporting with R Markdown, Writing functions in R, Intermediate R, Intermediate R – Practice, Introduction to R, Working with R Studio IDE (Part 1 and Part 2), Building Web Applications in R with Shiny, Building Web Applications in R with Shiny – Case studies and Building Dashboards with shinydashboard.</p>
-<p>I attended the 10th Annual Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID): University of Washington, Seattle, WA (MCMC I for Infectious Diseases; Evolutionary Dynamics and Molecular Epidemiology of Viruses (BEAST); Spatial Statistics in Epidemiology and Public Health) (2018).</p>
-<p>I attended the 4th Annual Summer Institute in Infectious Diseases and Global Health: McGill University, Montreal-Canada (Genomic Epidemiology of Infectious Diseases: Introduction to genomic epidemiology and Whole Genome Sequence (WGS) data Analysis; Using WGS to infer transmission of bacterial pathogens; using WGS to predict antimicrobial resistance, Role of WGS in public health) (2018).</p>
-<p>I attended the 2nd IBS (International Biometric Society) International conference Uganda Region Conference with a short course in Longitudinal Data Analysis, Mildmay Uganda (2015).</p>
-<p>I have done ethics training such as CITI online ethics courses (Bio-Medical Research, Biomedical Responsible Conduct of Research Course, GCP for Clinical Trials with Investigational Drugs &amp; Biologics (ICH Focus), Social &amp; Behavioral Research (children, international, internet, pregnant women, prisoners), Social &amp; Behavioral Responsible Conduct of Research Course (2017)), the USG (University Systems of Georgia) Ethics Basic Course: Public Health (2016), ICH Good Clinical Practice Online course (2015) and Protecting Human Subject Research Participants Online course (2015). I have also done the Secure UGA course (EITS) online training which is a security awareness training program on protecting sensitive &amp; restricted data and risk awareness (2016).</p>
-<p>I have attended several Bioinformatics workshops such as (i) the Functional Genomics and Systems Biology Workshop: Gene Expression Data Analysis, Uganda Virus Research Institute (2015); (ii) the Introduction to Microarray data Analysis using R, Workshop, Uganda Virus Research Institute (2014); (iii) the Bioinformatics in the tropics Workshop, Uganda Virus Research Institute (2014); the (iv) Bioinformatics and Genomics Workshop, Makerere University (2014); (v) the Introduction to R for Data Analysis Workshop, Uganda Virus Research Institute (2013); and (vi) the Host-Pathogen Interactions and bioinformatics workshop at Makerere University, Uganda in 2017.</p>
-<p>I have also done a short course in High-performance computing (HPC) and Python Language Basics at the Georgia Advanced Computing Resource Center (GACRC) of the University of Georgia (UGA) (2018).</p>
+<div
+id="other-training-workshops-short-courses-and-conferences-attended"
+class="section level2">
+<h2>Other training, workshops, short courses and conferences
+attended</h2>
+<p>I attended the Physiologically based pharmacokinetic (PBPK) modelling
+Workshop - Kampala, Uganda; Application of Physiologically based
+pharmacokinetic (PBPK) modelling to optimize pharmacotherapy in pregnant
+and breastfeeding women.</p>
+<p>I attended the Infectious Disease Modelling Course - by the GeMVi
+Team, University of Warwick (2020-2021); Workshop 1: Mathematical
+deterministic modelling; Workshop 2: Use of maximum likelihood
+estimation to analyse super-spreading behaviour in novel disease
+outbreaks; Workshop 3: Stochastic Modeling -the Gillespie method;
+Workshop 4: Modelling Spatial Spread.</p>
+<p>I have done <a href="https://www.datacamp.com">DataCamp</a> courses
+in data manipulation and analysis: Introduction to Machine Learning,
+Longitudinal Data Analysis in R, Interactive Data Visualization with
+plotly in R, Analyzing Social Media Data in R, Reporting with R
+Markdown, Writing functions in R, Intermediate R, Intermediate R –
+Practice, Introduction to R, Working with R Studio IDE (Part 1 and Part
+2), Building Web Applications in R with Shiny, Building Web Applications
+in R with Shiny – Case studies and Building Dashboards with
+shinydashboard.</p>
+<p>I attended the 10th Annual Summer Institute in Statistics and
+Modeling in Infectious Diseases (SISMID): University of Washington,
+Seattle, WA (MCMC I for Infectious Diseases; Evolutionary Dynamics and
+Molecular Epidemiology of Viruses (BEAST); Spatial Statistics in
+Epidemiology and Public Health) (2018).</p>
+<p>I attended the 4th Annual Summer Institute in Infectious Diseases and
+Global Health: McGill University, Montreal-Canada (Genomic Epidemiology
+of Infectious Diseases: Introduction to genomic epidemiology and Whole
+Genome Sequence (WGS) data Analysis; Using WGS to infer transmission of
+bacterial pathogens; using WGS to predict antimicrobial resistance, Role
+of WGS in public health) (2018).</p>
+<p>I attended the 2nd IBS (International Biometric Society)
+International conference Uganda Region Conference with a short course in
+Longitudinal Data Analysis, Mildmay Uganda (2015).</p>
+<p>I have done ethics training such as citi online ethics courses (Human
+Subjects Protection - Biomedical (2024); Bio-Medical Research,
+Biomedical Responsible Conduct of Research Course, GCP for Clinical
+Trials with Investigational Drugs &amp; Biologics (ICH Focus), Social
+&amp; Behavioral Research (children, international, internet, pregnant
+women, prisoners), Social &amp; Behavioral Responsible Conduct of
+Research Course (2017)); Human Research Protection Training, Office for
+Human Research Pro- tections (OHRP, US. Dept. of Human and Health
+Services) (2023); ICH Good Clinical Practice E6 (R2) (2021); the USG
+(University Systems of Georgia) Ethics Basic Course: Public Health
+(2016); ICH Good Clinical Practice Online course (2015); and Protecting
+Human Subject Research Participants Online course (2015). I have also
+done the Secure UGA course (EITS) online training which is a security
+awareness training program on protecting sensitive &amp; restricted data
+and risk awareness (2016).</p>
+<p>I have attended several Bioinformatics workshops such as (i) the
+Functional Genomics and Systems Biology Workshop: Gene Expression Data
+Analysis, Uganda Virus Research Institute (2015); (ii) the Introduction
+to Microarray data Analysis using R, Workshop, Uganda Virus Research
+Institute (2014); (iii) the Bioinformatics in the tropics Workshop,
+Uganda Virus Research Institute (2014); the (iv) Bioinformatics and
+Genomics Workshop, Makerere University (2014); (v) the Introduction to R
+for Data Analysis Workshop, Uganda Virus Research Institute (2013); and
+(vi) the Host-Pathogen Interactions and bioinformatics workshop at
+Makerere University, Uganda in 2017.</p>
+<p>I have also done a short course in High-performance computing (HPC)
+and Python Language Basics at the Georgia Advanced Computing Resource
+Center (GACRC) of the University of Georgia (UGA) (2018).</p>
 </div>
 <div id="research-interests" class="section level2">
 <h2>Research Interests</h2>
-<p>My research interests lie in using computational approaches to answer epidemiology research questions, with a focus on using contact/social networks in addition to other epidemiological data of individuals, pathogen genomic data, machine learning &amp; data science, statistical analysis, mathematical and predictive modelling and simulations to understand the transmission of infectious diseases and the interplay between infectious and non-communicable diseases.</p>
+<p>My research interests lie in using quantitative methodologies (e.g.,
+data science, mathematical modeling, bioinformatics and advanced
+statistical methodologies etc.) to answer epidemiology research
+questions as well as address bio-medical and public health problems,
+with a focus on Antimicrobial Resistance (AMR). This involves using
+innovative in-silico approaches for designing antimicrobial drug
+combination therapies, employing bioinformatics techniques to identify
+One-Health AMR transmission pathways, utilizing data science
+methodologies to guide antimicrobial stewardship initiatives and using
+machine learning techniques to predict clinical outcomes of patients
+with drug resistant infections. I also have a strong passion for
+training and mentorship having benefited from both. I believe in
+building a critical mass of quantitative scientists so as to redress the
+capacity gap and to perform and complete projects with immediate
+relevance to national and regional health issues.</p>
 </div>
 <div id="notable-skills" class="section level2">
 <h2>Notable Skills</h2>
 <ul>
-<li>Epidemiological study design, conduct and analysis for cross-sectional, ecological, cohort, case- control, clinical trials and hybrid designs including bias and confounding analysis and ethics assessments</li>
+<li>Bioinformatics skills in genome informatics, functional genomics,
+structural biology and pro- teomics, network biology, systems biology,
+population genetics, genome sequence analysis, com- putational
+neuroscience as well as familiarity with various bioinformatics databses
+(e.g. GenBank , KEGG, PubMed, UCSC etc), tools (e.g., samtools, IGV,
+GATK) and file formats (e.g. BED, VCF, FASTQ, BAM etc)</li>
+<li>Epidemiological study design, conduct and analysis for
+cross-sectional, ecological, cohort, case- control, clinical trials and
+hybrid designs including bias and confounding analysis and ethics
+assessments</li>
 <li>Social media data analysis</li>
 <li>Web scraping</li>
 <li>Data science/machine learning/artificial intelligence</li>
-<li>Statistical data analysis including biologic/bioinformatics data (such as whole genome sequence data - phylogenetics and transmission inference; gene expression data - gene expression analysis, gene annotation enrichment and pathways analysis), traditional epidemiologic data and ’big data’</li>
-<li>In order of proficiency: Statistical data analysis and programming with ’R’ and Python</li>
-<li>Formulation and analysis of mathematical and statistical models; compartmental, stochastic, individual based, population level, network models</li>
-<li>Network building, analysis &amp; inference including social networks and biological networks</li>
+<li>Statistical data analysis including biologic/bioinformatics data
+(such as whole genome sequence data - phylogenetics and transmission
+inference; gene expression data - gene expression analysis, gene
+annotation enrichment and pathways analysis), traditional epidemiologic
+data and ’big data’</li>
+<li>In order of proficiency: Statistical data analysis and programming
+with ’R’ and Python</li>
+<li>Unix</li>
+<li>Formulation and analysis of mathematical and statistical models;
+compartmental, stochastic, individual based, population level, network
+models</li>
+<li>Network building, analysis &amp; inference including social networks
+and biological networks</li>
 <li>GWAS data analysis</li>
 <li>Reproducible research with LaTeX, knitr and R Markdown</li>
 <li>Version control with Git, Guthub and GitKraken</li>
@@ -427,14 +583,32 @@ div.tocify {
 <div id="awards-distinctions-and-prizes" class="section level2">
 <h2>Awards, distinctions and prizes</h2>
 <ul>
-<li>BRecA (Nurturing Genomics and Bioinformatics Research Capacity in Africa) Postdoctoral Fellowship Award, Makerere University; funded by the NIH Common Fund: NIH-Forgaty International Center (2020-2021) (Award Number U2RTW010627)</li>
-<li>Fogarty-NIH Phd fellowship; University of Georgia, College of Public Health, Center for Global Health (2016-2020/21) (Award Number D43TW010045)</li>
-<li>Commonwealth scholarship tenable at the University of Cambridge, UK (2014-2015)</li>
-<li>Commonwealth, Cambridge and European Trust scholarship (2014-2015)</li>
-<li>Winner, Uganda Virus Research Institute (UVRI) Internship Competition (2013)</li>
-<li>Wellcome Trust Strategic Internship Award in Bioinformatics and Computational Biology</li>
-<li>Fourth prize, 2012 National University Mathematics Contest (Uganda)</li>
-<li>Admitted to Makerere University for the undergraduate degree on government sponsorship (national merit)</li>
+<li>Presentation (Panelist) at the Advisory Board Meeting of the NIH
+Fogarty International Center - How I became an early career data
+scientist + Perspectives on the impact of programs like DS-I Africa
+&amp; H3Africa: Opportunities &amp; challenges (2022).</li>
+<li>Postdoc fellow, Fogarty-NIH funded ”HIV and co-infections in Uganda”
+international research training programme (2022-2023) (Award Number
+2D43TW009771-06).</li>
+<li>BRecA (Nurturing Genomics and Bioinformatics Research Capacity in
+Africa) Postdoctoral Fellowship Award, Makerere University; funded by
+the NIH Common Fund: NIH-Forgaty International Center (2020-2021) (Award
+Number U2RTW010627)</li>
+<li>Fogarty-NIH Phd fellowship; University of Georgia, College of Public
+Health, Center for Global Health (2016-2020/21) (Award Number
+D43TW010045)</li>
+<li>Commonwealth scholarship tenable at the University of Cambridge, UK
+(2014-2015)</li>
+<li>Commonwealth, Cambridge and European Trust scholarship
+(2014-2015)</li>
+<li>Winner, Uganda Virus Research Institute (UVRI) Internship
+Competition (2013)</li>
+<li>Wellcome Trust Strategic Internship Award in Bioinformatics and
+Computational Biology</li>
+<li>Fourth prize, 2012 National University Mathematics Contest
+(Uganda)</li>
+<li>Admitted to Makerere University for the undergraduate degree on
+government sponsorship (national merit)</li>
 <li>Merit based fees bursary at high school</li>
 </ul>
 </div>

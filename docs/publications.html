@@ -13,7 +13,7 @@
 
 <title>Publications</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
@@ -29,12 +29,12 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -44,6 +44,7 @@
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
     </style>
+
 
 
 
@@ -73,6 +74,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -130,11 +134,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -163,8 +171,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -172,16 +180,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -304,7 +305,7 @@ div.tocify {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -314,7 +315,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     About
      
     <span class="caret"></span>
@@ -326,7 +327,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Projects
      
     <span class="caret"></span>
@@ -371,21 +372,135 @@ div.tocify {
 </div>
 
 
-<ol style="list-style-type: decimal">
-<li><p>Kayondo, H. W., Ssekagiri, A., Nabakooza, G., Bbosa, N., Ssemwanga, D., Kaleebu, P., Mwalili, S., Mango, J. M., Leigh Brown, A. J., Saenz, R. A., Galiwango, R., &amp; Kitayimbwa, J. M. (2021). Employing phylogenetic tree shape statistics to resolve the underlying host population structure. BMC Bioinformatics, 22(1), 546. <a href="https://doi.org/10.1186/s12859-021-04465-1" class="uri">https://doi.org/10.1186/s12859-021-04465-1</a></p></li>
-<li><p>Daudi Jjingo, Gerald Mboowa, Ivan Sserwadda, Robert Kakaire, Davis Kiberu, Marion Amujal, Ronald Galiwango, David Kateete, Moses Joloba, Christopher C Whalen, Bioinformatics mentorship in a resource limited setting, Briefings in Bioinformatics, 2021;, bbab399, https: //doi.org/10.1093/bib/bbab399.</p></li>
-<li><p>Miller, P.B., Zalwango, S., Galiwango, R. et al. Association between tuberculosis in men and social network structure in Kampala, Uganda. BMC Infect Dis 21, 1023 (2021). <a href="https://doi.org/10.1186/s12879-021-06475-z" class="uri">https://doi.org/10.1186/s12879-021-06475-z</a>.</p></li>
-<li><p>Yassine, E., Galiwango, R., Ssengooba, W., Ashaba, F., Joloba, M. L., Zalwango, S., Whalen, C. C., &amp; Quinn, F. (2021). Assessing a transmission network of Mycobacterium tuberculosis in an African city using single nucleotide polymorphism threshold analysis. MicrobiologyOpen, 10(3), e1211. <a href="https://doi.org/10.1002/mbo3.1211" class="uri">https://doi.org/10.1002/mbo3.1211</a>.</p></li>
-<li><p>Joseph Ssebuliba, Doreen Mbabazi Ssebuliba, Juliet Nakakawa Nsumba, Ronald Galiwango, Hassan Kayondo, Henry Kasumba, Martha Kirabo, Agnes Namyalo, James Bumba, Letisha Najjemba, Bernard Molho Bwambale, Vincent Arumadri, Agnes Kiragga and John Kitayimbwa., (2021, July 28). Experts predict when third wave will hit Uganda if SOPs are not adhered to. New Vision, p.3. Available online at: <a href="https://www.newvision.co.ug/articledetails/110014" class="uri">https://www.newvision.co.ug/articledetails/110014</a> or <a href="https://www.newvision.co.ug/articledetails/110273" class="uri">https://www.newvision.co.ug/articledetails/110273</a>.</p></li>
-<li><p>Kiragga, A., Kitayimbwa, J., Galiwango, R. and Mbonye, A., (2020, May 9). Dons Advise on Lockdown Lifting. New Vision, p.26. Available online at: <a href="https://www.pmldaily.com/investigations/special-reports/2020/05/v.html" class="uri">https://www.pmldaily.com/investigations/special-reports/2020/05/v.html</a>.</p></li>
-<li><p>Kiragga, A., Kitayimbwa, J., Galiwango, R. and Mbonye, A., (2020, May 18). COVID-19: Experts Caution on Exclusive Use of Masks. New Vision, p.4. Available online at: <a href="https://www.pmldaily.com/investigations/special-reports/2020/05/policybrief-experts-warn-that-exclusive-use-of-face-masks-may-not-be-useful-as-lifting-of-covid-19-lockdown-beckons.html" class="uri">https://www.pmldaily.com/investigations/special-reports/2020/05/policybrief-experts-warn-that-exclusive-use-of-face-masks-may-not-be-useful-as-lifting-of-covid-19-lockdown-beckons.html</a>.</p></li>
-<li><p>Galiwango, Ronald and Kitayimbwa, John and Kiragga, Agnes N. and Atkins, Katherine E. and Brown, Andrew Leigh and Mbonye, Anthony K., Modelling the Impact and Public Health Response to COVID-19 in Uganda (6/18/2020). Available at SSRN: <a href="https://ssrn.com/abstract=3633199" class="uri">https://ssrn.com/abstract=3633199</a> or <a href="http://dx.doi.org/10.2139/ssrn.3633199" class="uri">http://dx.doi.org/10.2139/ssrn.3633199</a>.</p></li>
-<li><p>Galiwango, Ronald; Characterization and Prevention of Tuberculosis Transmission Using Social Networks of TB Patients, Pathogen Whole Genome Sequencing and Mathematical Modeling,University of Georgia. ProQuest Dissertations Publishing, 2019. 27546331. Available at <a href="https://scholar.google.com/scholar?oi=bibs&amp;cluster=4325666414142763784&amp;btnI=1&amp;hl=" class="uri">https://scholar.google.com/scholar?oi=bibs&amp;cluster=4325666414142763784&amp;btnI=1&amp;hl=</a> en</p></li>
-<li><p>Wajja A, Kizito D, Nassanga B, Nalwoga A, Kabagenyi J, Kimuda S, Galiwango R, Mutonyi G, Vermaak S, Satti I, Verweij J, Tukahebwa E, Cose S, Levin J, Kaleebu P, Elliott AM, McShane H. The effect of current Schistosoma mansoni infection on the immunogenicity of a candidate TB vaccine, MVA85A, in BCG-vaccinated adolescents: An open-label trial. PLoS Negl Trop Dis. 2017 May;11(5): e0005440. PubMed PMID: 28472067; PubMed Central PMCID: PMC5417418.</p></li>
-<li><p>Conference Abstract: James Smith: James Smith, Ronald Galiwango, Argyris Zardilis, Albert Koulman &amp; Julian Grin (2015). Stochastic Process &amp; Mixture Models of Fatty Acid &amp; Lipid Metabolism form a Novel Strategy for Obtaining Status Biomarkers; MMH 2015 1st International Conference on Computational Modeling of Metabolic Health, Inflammation and Diabetes; University of Cambridge, Cambridge, UK.</p></li>
-<li><p>Contributor to R package DSAIDE. Infectious Disease Surveillance App: Handel A (2017). Learning infectious disease epidemiology in a modern framework. PLoS Computational Biology, 13(10), e1005642. <a href="https://doi.org/10.1371/journal.pcbi.1005642" class="uri">https://doi.org/10.1371/journal.pcbi.1005642</a>.</p></li>
-</ol>
-<p>Complete list of works and publications can be found using ORCID ID: <a href="https://orcid.org/0000-0002-5962-151X" class="uri">https://orcid.org/0000-0002-5962-151X</a>.</p>
+<ul>
+<li><p>Nsubuga, M., Galiwango, R., Jjingo, D. et al. Generalizability of
+machine learning in predicting antimicrobial resistance in E. coli: a
+multi-country case study in Africa. BMC Genomics 25, 287 (2024). <a
+href="https://doi.org/10.1186/s12864-024-10214-4"
+class="uri">https://doi.org/10.1186/s12864-024-10214-4</a></p></li>
+<li><p>Aruhomukama, D., Galiwango, R., Meehan, C. J., &amp; Asiimwe, B.
+(2024). Enhancing genomics and bioinformatics access in Africa: An
+imperative leap. The Lancet Microbe, 0(0). <a
+href="https://doi.org/10.1016/S2666-5247(23)00408-1"
+class="uri">https://doi.org/10.1016/S2666-5247(23)00408-1</a></p></li>
+<li><p>Nabakooza, G., Owuor, D. C., de Laurent, Z. R., Galiwango, R.,
+Owor, N., Kayiwa, J. T., Jjingo, D., Agoti, C. N., Nokes, D. J.,
+Kateete, D. P., Kitayimbwa, J. M., Frost, S. D. W., &amp; Lutwama, J. J.
+(2023). Phylogenomic analysis uncovers a 9-year variation of Uganda
+influenza type-A strains from the WHO-recommended vaccines and other
+Africa strains. Scientific Reports, 13(1), 5516. <a
+href="https://doi.org/10.1038/s41598-023-30667-z"
+class="uri">https://doi.org/10.1038/s41598-023-30667-z</a></p></li>
+<li><p>Galiwango, R., Bainomugisha, E., Kivunike, F. et al. Air
+pollution and mobility patterns in two Ugandan cities during COVID-19
+mobility restrictions suggest the validity of air quality data as a
+measure for human mobility. Environ Sci Pollut Res 30, 34856–34871
+(2023). <a href="https://doi.org/10.1007/s11356-022-24605-1"
+class="uri">https://doi.org/10.1007/s11356-022-24605-1</a></p></li>
+<li><p>Kiragga AN, Najjemba L, Galiwango R, Banturaki G, Munyiwra G,
+Iwumbwe I, et al. (2023) Community purchases of antimicrobials during
+the COVID-19 pandemic in Uganda: An increased risk for antimicrobial
+resistance. PLOS Glob Public Health 3(2): e0001579. <a
+href="https://doi.org/10.1371/journal.pgph.0001579"
+class="uri">https://doi.org/10.1371/journal.pgph.0001579</a></p></li>
+<li><p>Nabakooza, G., Galiwango, R., Frost, S. D. W., Kateete, D. P.,
+&amp; Kitayimbwa, J. M. (2022). Molecular Epidemiology and Evolutionary
+Dynamics of Human Influenza Type-A Viruses in Africa: A Systematic
+Review. Microorganisms, 10(5), 900. MDPI AG. Retrieved from <a
+href="http://dx.doi.org/10.3390/microorganisms10050900"
+class="uri">http://dx.doi.org/10.3390/microorganisms10050900</a></p></li>
+<li><p>Kayondo, H. W., Ssekagiri, A., Nabakooza, G., Bbosa, N.,
+Ssemwanga, D., Kaleebu, P., Mwalili, S., Mango, J. M., Leigh Brown, A.
+J., Saenz, R. A., Galiwango, R., &amp; Kitayimbwa, J. M. (2021).
+Employing phylogenetic tree shape statistics to resolve the underlying
+host population structure. BMC Bioinformatics, 22(1), 546. <a
+href="https://doi.org/10.1186/s12859-021-04465-1"
+class="uri">https://doi.org/10.1186/s12859-021-04465-1</a></p></li>
+<li><p>Daudi Jjingo, Gerald Mboowa, Ivan Sserwadda, Robert Kakaire,
+Davis Kiberu, Marion Amujal, Ronald Galiwango, David Kateete, Moses
+Joloba, Christopher C Whalen, Bioinformatics mentorship in a resource
+limited setting, Briefings in Bioinformatics, 2021;, bbab399, <a
+href="https://doi.org/10.1093/bib/bbab399"
+class="uri">https://doi.org/10.1093/bib/bbab399</a>.</p></li>
+<li><p>Miller, P.B., Zalwango, S., Galiwango, R. et al. Association
+between tuberculosis in men and social network structure in Kampala,
+Uganda. BMC Infect Dis 21, 1023 (2021). <a
+href="https://doi.org/10.1186/s12879-021-06475-z"
+class="uri">https://doi.org/10.1186/s12879-021-06475-z</a>.</p></li>
+<li><p>Yassine, E., Galiwango, R., Ssengooba, W., Ashaba, F., Joloba, M.
+L., Zalwango, S., Whalen, C. C., &amp; Quinn, F. (2021). Assessing a
+transmission network of Mycobacterium tuberculosis in an African city
+using single nucleotide polymorphism threshold analysis.
+MicrobiologyOpen, 10(3),e1211. <a
+href="https://doi.org/10.1002/mbo3.1211"
+class="uri">https://doi.org/10.1002/mbo3.1211</a>.</p></li>
+<li><p>Joseph Ssebuliba, Doreen Mbabazi Ssebuliba, Juliet Nakakawa
+Nsumba, Ronald Galiwango, Hassan Kayondo, Henry Kasumba, Martha Kirabo,
+Agnes Namyalo, James Bumba, Letisha Najjemba, Bernard Molho Bwambale,
+Vincent Arumadri, Agnes Kiragga and John Kitayimbwa., (2021, July 28).
+Experts predict when third wave will hit Uganda if SOPs are not adhered
+to. New Vision, p.3. Available online at: <a
+href="https://www.newvision.co.ug/articledetails/110014"
+class="uri">https://www.newvision.co.ug/articledetails/110014</a> or <a
+href="https://www.newvision.co.ug/articledetails/110273"
+class="uri">https://www.newvision.co.ug/articledetails/110273</a>.</p></li>
+<li><p>Kiragga, A., Kitayimbwa, J., Galiwango, R. and Mbonye, A., (2020,
+May 9). Dons Advise on Lockdown Lifting. New Vision, p.26. Available
+online at: <a
+href="https://www.pmldaily.com/investigations/special-reports/2020/05/v.html"
+class="uri">https://www.pmldaily.com/investigations/special-reports/2020/05/v.html</a>.</p></li>
+<li><p>Kiragga, A., Kitayimbwa, J., Galiwango, R. and Mbonye, A., (2020,
+May 18). COVID-19: Experts Caution on Exclusive Use of Masks. New
+Vision, p.4. Available online at: <a
+href="https://www.pmldaily.com/investigations/special-reports/2020/05/policybrief-experts-warn-that-exclusive-use-of-face-masks-may-not-be-useful-as-lifting-of-covid-19-lockdown-beckons.html"
+class="uri">https://www.pmldaily.com/investigations/special-reports/2020/05/policybrief-experts-warn-that-exclusive-use-of-face-masks-may-not-be-useful-as-lifting-of-covid-19-lockdown-beckons.html</a>.</p></li>
+<li><p>Galiwango, Ronald and Kitayimbwa, John and Kiragga, Agnes N. and
+Atkins, Katherine E. and Brown, Andrew Leigh and Mbonye, Anthony K.,
+Modelling the Impact and Public Health Response to COVID-19 in Uganda
+(6/18/2020). Available at SSRN: <a
+href="https://ssrn.com/abstract=3633199"
+class="uri">https://ssrn.com/abstract=3633199</a> or <a
+href="http://dx.doi.org/10.2139/ssrn.3633199"
+class="uri">http://dx.doi.org/10.2139/ssrn.3633199</a>.</p></li>
+<li><p>Galiwango, Ronald; Characterization and Prevention of
+Tuberculosis Transmission Using Social Networks of TB Patients, Pathogen
+Whole Genome Sequencing and Mathematical Modeling,University of Georgia.
+ProQuest Dissertations Publishing, 2019. 27546331. Available at <a
+href="https://scholar.google.com/scholar?oi=bibs&amp;cluster=4325666414142763784&amp;btnI=1&amp;hl="
+class="uri">https://scholar.google.com/scholar?oi=bibs&amp;cluster=4325666414142763784&amp;btnI=1&amp;hl=</a>
+en</p></li>
+<li><p>Wajja, A., Kizito, D., Nassanga, B., Nalwoga, A., Kabagenyi, J.,
+Kimuda, S., Galiwango, R., Mutonyi, G., Vermaak, S., Satti, I., Verweij,
+J., Tukahebwa, E., Cose, S., Levin, J., Kaleebu, P., Elliott, A. M.,
+&amp; McShane, H. (2017). The effect of current Schistosoma mansoni
+infection on the immunogenicity of a candidate TB vaccine, MVA85A, in
+BCG-vaccinated adolescents: An open-label trial. PLOS Neglected Tropical
+Diseases, 11(5), e0005440. <a
+href="https://doi.org/10.1371/journal.pntd.0005440"
+class="uri">https://doi.org/10.1371/journal.pntd.0005440</a>.</p></li>
+<li><p>Conference Abstract: James Smith: James Smith, Ronald Galiwango,
+Argyris Zardilis, Albert Koulman &amp; Julian Grin (2015). Stochastic
+Process &amp; Mixture Models of Fatty Acid &amp; Lipid Metabolism form a
+Novel Strategy for Obtaining Status Biomarkers; MMH 2015 1st
+International Conference on Computational Modeling of Metabolic Health,
+Inflammation and Diabetes; University of Cambridge, Cambridge, UK. <a
+href="https://www.researchgate.net/profile/James_Smith97/publication/305432116_"
+class="uri">https://www.researchgate.net/profile/James_Smith97/publication/305432116_</a>
+Infinite_Mixture_Dirichlet_Process_Reveals_a_Landscape_of_Metabolic_Nutritional_
+States_of_Fatty_Acids_in_a_Population/links/578e8bbb08ae81b4466ec9d1/Infinite-Mixture-
+Dirichlet-Process-Reveals-a-Landscape-of-Metabolic-Nutritional-States-of-Fatty-
+Acids-in-a-Population.pdf</p></li>
+<li><p>Conference Abstract: Timothy Mwanje Kintu: Timothy Mwanje Kintu,
+Mugume Twinamatsiko Atwine, Ronald Galiwango, Christine
+Sekaggya-Wiltshire, Barbara Castelnuovo (2023, August 30). Machine
+Learning-Based Identification of Predictors Influencing Sub-Therapeutic
+Rifampicin Concentra- tions in HIV/TB Co-Infected Patients. Deep
+Learning Indaba 2023. <a href="https://openreview.net/"
+class="uri">https://openreview.net/</a> forum?id=GVWNLiqQvG</p></li>
+<li><p>Complete list of works and publications can be found using ORCID
+ID: <a href="https://orcid.org/0000-0002-5962-151X"
+class="uri">https://orcid.org/0000-0002-5962-151X</a>.</p></li>
+</ul>
 
 
 

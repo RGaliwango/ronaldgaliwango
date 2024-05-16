@@ -3,4 +3,4 @@ title: "Contact"
 output: html_document
 ---
 
-My physical address is: African Centers of Excellence in Bioinformatics (ACE), Makerere University Kampala-Uganda. The primary means of contact is via email(galiwango.gronald.ronald@gmail.com). You can also follow me on twitter (@GaliwangoR) and [linkedin](https://www.linkedin.com/in/ronald-galiwango-phd-mphil-bsc-69118576).
+My physical address is: African Center of Excellence in Bioinformatics and Data Intensive Sciences (ACE-Uganda), The Infectious Diseases Institute (IDI) - McKinnell Knowledge Center, Makerere University Kampala-Uganda. The primary means of contact is via email(galiwango.gronald.ronald@gmail.com). You can also follow me on X (former twitter) (@GaliwangoR) and [linkedin](https://www.linkedin.com/in/ronald-galiwango-phd-mphil-bsc-69118576).

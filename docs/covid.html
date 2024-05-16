@@ -13,7 +13,7 @@
 
 <title>Modelling the impact and public health response to COVID-19</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
@@ -29,12 +29,12 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -44,6 +44,7 @@
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
     </style>
+
 
 
 
@@ -73,6 +74,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -130,11 +134,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -163,8 +171,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -172,16 +180,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -304,7 +305,7 @@ div.tocify {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -314,7 +315,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     About
      
     <span class="caret"></span>
@@ -326,7 +327,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Projects
      
     <span class="caret"></span>
@@ -366,14 +367,45 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Modelling the impact and public health response to COVID-19</h1>
+<h1 class="title toc-ignore">Modelling the impact and public health
+response to COVID-19</h1>
 
 </div>
 
 
-<p>With other colleagues at the <a href="https://github.com/compbiorg/">Centre for Computational Biology, Uganda Christian University</a>, we modelled SARS-CoV-2 transmission dynamics in Uganda and published two key policy briefs (<a href="https://www.pmldaily.com/investigations/special-reports/2020/05/v.html">brief 1</a> and <a href="https://www.pmldaily.com/investigations/special-reports/2020/05/policybrief-experts-warn-that-exclusive-use-of-face-masks-may-not-be-useful-as-lifting-of-covid-19-lockdown-beckons.html">brief 2</a>) and a <a href="http://dx.doi.org/10.2139/ssrn.3633199">manuscript</a>. This work informed that truck drivers posed a threat to spark a community epidemic in the country, which has actually been the case. Our models also showed that social distancing combined with use of face-masks would contain the epidemic but exclusive use of face-masks would not.</p>
-<p>Following the second wave of COVID-19 in Uganda we conducted modelling predictions for the third wave of COVID-19 in Uganda. This was was published in a <a href="https://www.newvision.co.ug/articledetails/110014">policy brief</a> in local print and online media. Based on our modelling approaches, we predicted that the country was likely to experience a third wave early 2022 that would warrant another lockdown, if adequate vaccination was not achieved for more than half of the nation’s population. In addition, our models showed that vaccination and testing efforts needed to be supplemented by a continued sensitization of adherence to the SOPs even after receipt of the vaccine.</p>
-<p>Again, under COVID-19, I am part of the <a href="https://coastv1-a7dd67bb-d488-44c3-ba50.cranecloud.io/">COAST (End-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda (COAST)</a> modelling workstream where we are using large datasets from radio transcripts on COVID-19 community voices, human mobility data, air qaulity data and data on meteorological conditions (weather) and other data to inform data-driven modelling (statistical, machine learning and mathematical forecasting models) of COVID-19 epidemic dynamics in Uganda.</p>
+<p>With other colleagues at the <a
+href="https://github.com/compbiorg/">Center for Computational Biology,
+Uganda Christian University</a>, we modelled SARS-CoV-2 transmission
+dynamics in Uganda and published two key policy briefs (<a
+href="https://www.pmldaily.com/investigations/special-reports/2020/05/v.html">brief
+1</a> and <a
+href="https://www.pmldaily.com/investigations/special-reports/2020/05/policybrief-experts-warn-that-exclusive-use-of-face-masks-may-not-be-useful-as-lifting-of-covid-19-lockdown-beckons.html">brief
+2</a>) and a <a
+href="http://dx.doi.org/10.2139/ssrn.3633199">manuscript</a>. This work
+informed that truck drivers posed a threat to spark a community epidemic
+in the country, which has actually been the case. Our models also showed
+that social distancing combined with use of face-masks would contain the
+epidemic but exclusive use of face-masks would not.</p>
+<p>Following the second wave of COVID-19 in Uganda we conducted
+modelling predictions for the third wave of COVID-19 in Uganda. This was
+was published in a <a
+href="https://www.newvision.co.ug/articledetails/110014">policy
+brief</a> in local print and online media. Based on our modelling
+approaches, we predicted that the country was likely to experience a
+third wave early 2022 that would warrant another lockdown, if adequate
+vaccination was not achieved for more than half of the nation’s
+population. In addition, our models showed that vaccination and testing
+efforts needed to be supplemented by a continued sensitization of
+adherence to the SOPs even after receipt of the vaccine.</p>
+<p>Again, under COVID-19, I am part of the <a
+href="https://coastv1-a7dd67bb-d488-44c3-ba50.cranecloud.io/">COAST
+(End-to-end AI and data systems for targeted surveillance and management
+of COVID-19 and future pandemics affecting Uganda (COAST)</a> modelling
+workstream where we are using large datasets from radio transcripts on
+COVID-19 community voices, human mobility data, air qaulity data and
+data on meteorological conditions (weather) and other data to inform
+data-driven modelling (statistical, machine learning and mathematical
+forecasting models) of COVID-19 epidemic dynamics in Uganda.</p>
 
 
 
