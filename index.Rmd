@@ -7,30 +7,53 @@ output:
 
 
 
-```{r echo=FALSE, out.width="200px", fig.align='left', fig.cap="Ronald Galiwango, Bioinformatics/data scientist, The African Center of Excellence in Bioinformatics and Data Sciences, The Infectious Diseases Institute, Makerere University, Kampala, Uganda"}
+```{r echo=FALSE, out.width="200px", fig.align='left', fig.cap="Ronald Galiwango - Deputy Director, The African Center of Excellence in Bioinformatics and Data Sciences; Bioinformatics Scientist and Data Science Lead, The Infectious Diseases Institute, Makerere University, Kampala, Uganda"}
 
-knitr::include_graphics("photo.jpg") 
+knitr::include_graphics("shengen.JPG") 
 ```
 
 
-I am currently the Deputy Director and a Bioinformatics/data scientist at [The African Center of Excellence in Bioinformatics and Data Sciences (ACE-Uganda)](https://ace.idi.co.ug/), [The Infectious Diseases Institute](https://idi.mak.ac.ug/), [Makerere University](https://www.mak.ac.ug/), Kampala, Uganda. I also teach on the MSc/PhD Bioinformatics programme at [Makerere University](https://www.mak.ac.ug/) hosted at ACE-Uganda.
+I am the Deputy Director for [The African Center of Excellence in Bioinformatics and Data Sciences (ACE-Uganda)](https://ace.idi.co.ug/) located at the [The Infectious Diseases Institute](https://idi.mak.ac.ug/), [Makerere University](https://www.mak.ac.ug/), Kampala, Uganda, where I am a Bioinformatics Scientist and the Data Science Lead. I also teach on the MSc/PhD Bioinformatics programme at [Makerere University](https://www.mak.ac.ug/) hosted at ACE-Uganda.
 
-My research interests lie in using quantitative methodologies (e.g., data science, mathematical modeling, bioinformatics and advanced statistical methodologies etc.) to answer epidemiology research questions as well as address bio-medical and public health problems, with a focus on Antimicrobial Resistance (AMR). This involves using innovative in-silico approaches for designing antimicrobial drug combination therapies, employing bioinformatics techniques to identify One-Health AMR transmission pathways, utilizing data science methodologies to guide antimicrobial stewardship initiatives and using machine learning techniques to predict clinical outcomes of patients with drug resistant infections. I also have a strong passion for training and mentorship having benefited from both. I believe in building a critical mass of quantitative scientists so as to redress the capacity gap and to perform and complete projects with immediate relevance to national and regional health issues.
+My research encompasses using quantitative methodologies (machine learning, mathematical modeling and simulation, bioinformatics and advanced statistical methodologies) to answer epidemiology research questions as well as address bio-medical and public health problems, with a focus on Antimicrobial Resistance (AMR) and Epidemic Modelling. I also have a strong passion for training and mentorship, contributing to various training programmes in the country.
 
 # News
+Jan 2025: Attended the [AlphaFold Education Summit](https://www.ebi.ac.uk/training/events/alphafold-education-summit-1/).
+
+Jan 2025: Attended the  WHO Health Emergencies Programme course entitled [Pandemic planning: Getting “PRET” for the next pandemic](https://www.who.int/publications/m/item/pandemic-planning-getting-pret-for-the-next-pandemic).
+
+Dec 2024: Our manuscript entitled [Machine learning-based prediction of antibiotic resistance in Mycobacterium tuberculosis clinical isolates from Uganda](https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-024-10282-7) has been published in BMC Infectious Diseases.
+
+Dec 2024: Our manuscript entitled [Using digital health technologies to optimise antimicrobial use globally](https://linkinghub.elsevier.com/retrieve/pii/S2589750024001985) has been published in the Lancet Digital Health.
+
+Dec 2024: A preprint for our manuscript entitled [The Role of Community Networks in the Transmission and Persistence of M. Tuberculosis in Urban Africa with Endemic Tuberculosis](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5068608) is now live on SSRN.
+
+Nov 2024: Our manuscript entitled [Combating Antimicrobial Resistance Through a Data-Driven Approach to Optimize Antibiotic Use and Improve Patient Outcomes: Protocol for a Mixed Methods Study](https://www.researchprotocols.org/2024/1/e58116) has been published in JMRI Research Protocols.
+
+Oct 2024: Our manuscript entitled [Psychological Distress Among Ethnically Diverse Participants From Eastern and Southern Africa](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2824669) has been published in JAMA Psychiatry.
+
+Nov 2024: Presentation (Panelist) at the Plenary Session Early Career Researchers’ Theme: Nurturing the Next Generation of Data Science Leaders for African Health Sector; Fourth Meeting of the DS-I Africa Consortium (16-22 November 2024), The Ravenala Attitude Hotel, Mauritius.
+
+June 2024: A preprint for our manuscript entitled [Gut microbial profiling of COVID-19 patients in Uganda](https://www.biorxiv.org/content/10.1101/2024.06.28.601197v1) is now live on BioRxiv.
+
+May 2024: Our manuscript entitled [Enhancing genomics and bioinformatics access in Africa: an imperative leap](https://www.thelancet.com/journals/lanmic/article/PIIS2666-5247(23)00408-1/fulltext) has been published in The Lancent Microbe
+
 May 2024: Our abstract titled "Genetic diversity and patterns of spread of SARS-CoV-2 in Uganda and East Africa: A phylogeography and phylodynamics approach" was accepted for a poster presentation at the World OneHealth Congress in CapeTown, S.Africa.
 
 April 2024: Completed the online citi Human Subjects Protection - Biomedical Ethics Training.
 
+March 2024: Our manuscript entitled [Generalizability of machine learning in predicting antimicrobial resistance in E. coli: a multi-country case study in Africa](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-024-10214-4) has been published in BMC Genomics.
+
 March 2024: A preprint for our manuscript titled "[Combatting Antimicrobial Resistance through a Data-Driven Approach to Optimize Antibiotic Use and Improve Patient Outcomes: Protocol for a mixed approach study](https://preprints.jmir.org/ojs/index.php/preprints/preprint/58116)" is now live.
 
-March 2024: Our abstract titled "A Machine Learning model for prediction of disengagement from Prevention of
-Mother to Child Transmission (PMTCT) care among Women Living with HIV
+March 2024: Our abstract titled "A Machine Learning model for prediction of disengagement from Prevention of Mother to Child Transmission (PMTCT) care among Women Living with HIV
 (WLWH) in East Africa." has been accepted for a poster presentation at IeDEA Early Stage Investigators’ conference.
 
 March 2024: We have been awarded a grant working with The University of California San Francisco (UCSF), USA for a project titled "She Data Science (SHEDS)"; From 2024-03 to 2027-02; Agreement No. UFRA-460; Daudi Jjingo (PI); Role: Senior Data Scientist. The project will empower Uganda’s women in health data science: identify barriers, bridging knowledge and innovation for tangible impact.
 
 January 2024: Attended the Physiologically based pharmacokinetic (PBPK) modelling Workshop - Kampala, Uganda
+
+Dec 2023: Our manuscript entitled [Phylogenomic analysis uncovers a 9-year variation of Uganda influenza type-A strains from the WHO-recommended vaccines and other Africa strains](https://www.nature.com/articles/s41598-023-30667-z) has been published in Scientific Reports
 
 October 2023: Completed the Human Research Protection Training by the Office for Human Research Protections (OHRP, US. Dept. of Human and Health Services)
 
@@ -38,27 +61,37 @@ August 2023: Our abstract titled "Machine Learning-Based Identification of Predi
 
 April 2023: We have been awarded a grant for a project titled "Centres for Antimicrobial Optimisation Network (CAMO-Net)"; From 2023-04 to 2026-04; Award No. 226692/Z/22/Z; Andrew Kambugu (PI). Role: Data Scientist (Co-investigator on a sub-study titled “Combatting Antimicrobial Resistance in Uganda: A Data-Driven Approach to Optimize Antibiotic Use and Improve Patient Outcomes”). This is a multidisciplinary global collaboration working together to address the impact of AMR on human health.
 
+Feb 2023: Our manuscript entitled [Community purchases of antimicrobials during the COVID-19 pandemic in Uganda: An increased risk for antimicrobial resistance](https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0001579) has been published in PLOS Global Public Health
+
+Dec 2022: Our manuscript entitled [Air pollution and mobility patterns in two Ugandan cities during COVID-19 mobility restrictions suggest the validity of air quality data as a measure for human mobility](https://link.springer.com/article/10.1007/s11356-022-24605-1) has been published in Environmental Science and Pollution Research.
+
 June 2022: Gave a presentation (and was a panelist) at the Advisory Board Meeting of the NIH Fogarty International Center - How I became an early career data scientist in Africa + Perspectives on the impact of programs like DS-I Africa & H3Africa: Opportunities & challenges.
 
-October 2021: Our manuscript entitled "Employing phylogenetic tree shape statistics to resolve the underlying host population structure" has been accepted for publication in BMC Bioinformatics.
+April 2022: Our manuscript entitled [Molecular Epidemiology and Evolutionary Dynamics of Human Influenza Type-A Viruses in Africa: A Systematic Review](https://www.mdpi.com/2076-2607/10/5/900) has been published in Microorganisms.
+
+Jan 2022: Awarded a Fogarty-NIH funded postdoc fellowship under the ”HIV and co-infections in Uganda” international research training programme (2022-2023) (Award Number 2D43TW009771-06).
+
+Jan 2022: Our manuscript entitled [Bioinformatics mentorship in a resource limited setting](https://academic.oup.com/bib/article/23/1/bbab399/6377513) has been published in Briefings in Bioinformatics.
+
+November 2021: Our manuscript entitled [Employing phylogenetic tree shape statistics to resolve the underlying host population structure](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04465-1) has been published in BMC Bioinformatics.
 
 October 2021: I attended the MUII-plus Infection and Immunity Symposium (2021) that showcased success stories and highlights of Infection and Immunity research (IIR) in Uganda, and forged a plan towards the future of IIR.
 
 September 2021: We have been awarded a U2R training grant by the US National Institutes of Health (NIH) for a project titled "Makerere University Data Science Research Training to Strengthen Evidence-Based Health Innovation, Intervention and Policy (MakDARTA)"; From 2021-09 to 2026-07; Grant No. 1U2RTW012116-01; David Patrick Kateete (PI), Role: Program faculty mentor.
 
-September 2021: Our manuscript entitled "Bioinformatics Mentorship in a Resource Limited Setting" has been published in Briefings in Bioinformatics.
+September 2021: Our manuscript entitled [Bioinformatics Mentorship in a Resource Limited Setting](https://academic.oup.com/bib/article/doi/10.1093/bib/bbab399/6377513) has been published in Briefings in Bioinformatics.
 
-September 2021: Our manuscript entitled "Association between tuberculosis in men and social network structure in Kampala, Uganda" has been published in BMC Infectious Diseases.
+September 2021: Our manuscript entitled [Association between tuberculosis in men and social network structure in Kampala, Uganda](https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-021-06475-z) has been published in BMC Infectious Diseases.
 
 August 2021: Completed the ICH Good Clinical Practice (GCP) E6 (R2) training
 
-June 2021: Our manuscript entitled "Assessing a transmission network of Mycobacterium tuberculosis in an African city using single nucleotide polymorphism threshold analysis" has been published in Microbiology Open.
+June 2021: Our manuscript entitled [Assessing a transmission network of Mycobacterium tuberculosis in an African city using single nucleotide polymorphism threshold analysis](https://onlinelibrary.wiley.com/doi/10.1002/mbo3.1211) has been published in Microbiology Open.
 
 December 2020: We have been awarded a grant by the Global South [AI4COVID Program](http://covidsouth.ai/grantees/) titled "End-to-end AI and data systems for targeted surveillance and management of COVID-19 and future pandemics affecting Uganda (COAST)"; Grant No. 109630-001/002; Engineer Bainomugisha (PI), Role: Co-lead, Modelling Working Group. Learn more about the project by visiting the project website: https://coastv1-a7dd67bb-d488-44c3-ba50.cranecloud.io/.
 
 September 2020: Peer reviewed for the International Journal of Infectious Diseases.
  
-August 2020: A pre-print of our manuscript entitled "Modelling the Impact and Public Health Response to COVID-19 in Uganda" is now live on SSRN.
+August 2020: A pre-print of our manuscript entitled [Modelling the Impact and Public Health Response to COVID-19 in Uganda](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3633199) is now live on SSRN.
 
 June 2020: Started teaching on the Bioinformatics MSc/PhD programme at Makerere University (MSB7203: BioPython and MSB7205: Population genetic and genomics)
 

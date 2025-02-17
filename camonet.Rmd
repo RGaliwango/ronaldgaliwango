@@ -1,0 +1,6 @@
+---
+title: "Combating Antimicrobial Resistance Through a Data-Driven Approach to Optimize Antibiotic Use and Improve Patient Outcomes"
+output: html_document
+---
+
+I am a co-investigator on project three of the Uganda hub for the Centres for Antimicrobial Optimisation Network known as [CAMO-Net](https://camonet.org/) Uganda, entitled [Combating Antimicrobial Resistance Through a Data-Driven Approach to Optimize Antibiotic Use and Improve Patient Outcomes: Protocol for a Mixed Methods Study](https://www.researchprotocols.org/2024/1/e58116) where I am leading two sub-projects (1) development of a dynamic AMR and Antimicrobial Use and Consumption (AMUC) [Data Warehouse](https://amrdb.idi.co.ug/) to support research in AMR and AMUC to inform AMR related interventions and public health policy and (2) development of Machine Learning (ML) models for predicting clinical outcomes of patients with bacterial infectious syndromes due to drug resistant pathogens. I am also on the steering committee of the Centers for Antimicrobial Optimization Network - Global Data Resource (CAMO-GDR) which is an initiative to develop and implement a resource for global good to share reliable, high-quality data and code for optimising antimicrobial therapies, starting with tools for antimicrobial pharmacokinetic (PK) and pharmacodynamic (PD) approaches. 

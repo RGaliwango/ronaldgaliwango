@@ -3,6 +3,18 @@ title: "Publications"
 output: html_document
 ---
 
+* Babirye, S. R., Nsubuga, M., Mboowa, G., Batte, C., Galiwango, R., & Kateete, D. P. (2024). Machine learning-based prediction of antibiotic resistance in Mycobacterium tuberculosis clinical isolates from Uganda. BMC Infectious Diseases, 24(1), 1391. https://doi.org/10.1186/s12879-024-10282-7
+
+* Rawson, T. M., Zhu, N., Galiwango, R., Cocker, D., Islam, M. S., Myall, A., Vasikasin, V., Wilson, R., Shafiq, N., Das, S., & Holmes, A. H. (2024). Using digital health technologies to optimise antimicrobial use globally. The Lancet Digital Health, 6(12), e914–e925. https://doi.org/10.1016/S2589-7500(24)00198-5
+
+* Mayito, J., Tumwine, C., Galiwango, R., Nuwamanya, E., Nakasendwa, S., Hope, M., Kig-
+gundu, R., Byonanebye, D. M., Dhikusooka, F., Twemanye, V., Kambugu, A., & Kakooza, F.
+(2024). Combating Antimicrobial Resistance Through a Data-Driven Approach to Optimize
+Antibiotic Use and Improve Patient Outcomes: Protocol for a Mixed Methods Study. JMIR
+Research Protocols, 13, e58116. https://doi.org/10.2196/58116
+
+* Tindi, K. B. B., Kalungi, A., Kinyanda, E., Gelaye, B., Martin, A. R., Galiwango, R., Ssembajjwe, W., Kirumira, F., Pretorius, A., Stevenson, A., Newton, C. R. J. C., Stein, D. J., Atkinson, E. G., Mwesiga, E. K., Kyebuzibwa, J., Chibnik, L. B., Atwoli, L., Baker, M., Alemayehu, M., . . . Akena, D. H. (2024). Psychological Distress Among Ethnically Diverse Participants From Eastern and Southern Africa. JAMA Network Open, 7(10), e2438304. https://doi.org/10.1001/jamanetworkopen.2024.38304
+
 * Nsubuga, M., Galiwango, R., Jjingo, D. et al. Generalizability of machine learning in predicting antimicrobial resistance in E. coli: a multi-country case study in Africa. BMC Genomics 25, 287 (2024). https://doi.org/10.1186/s12864-024-10214-4
 
 * Aruhomukama, D., Galiwango, R., Meehan, C. J., & Asiimwe, B. (2024). Enhancing genomics and bioinformatics access in Africa: An imperative leap. The Lancet Microbe, 0(0). https://doi.org/10.1016/S2666-5247(23)00408-1
@@ -40,7 +52,7 @@ en
 
 * Wajja, A., Kizito, D., Nassanga, B., Nalwoga, A., Kabagenyi, J., Kimuda, S., Galiwango, R., Mutonyi, G., Vermaak, S., Satti, I., Verweij, J., Tukahebwa, E., Cose, S., Levin, J., Kaleebu, P., Elliott, A. M., & McShane, H. (2017). The effect of current Schistosoma mansoni infection on the immunogenicity of a candidate TB vaccine, MVA85A, in BCG-vaccinated adolescents: An open-label trial. PLOS Neglected Tropical Diseases, 11(5), e0005440. https://doi.org/10.1371/journal.pntd.0005440. 
 
-* Conference Abstract: James Smith: James Smith, Ronald Galiwango, Argyris Zardilis, Albert Koulman & Julian Grin (2015). Stochastic Process & Mixture Models of Fatty Acid & Lipid Metabolism form a Novel Strategy for Obtaining Status Biomarkers; MMH 2015 1st International Conference on Computational Modeling of Metabolic Health, Inflammation and Diabetes; University of Cambridge, Cambridge, UK. https://www.researchgate.net/profile/James_Smith97/publication/305432116_ Infinite_Mixture_Dirichlet_Process_Reveals_a_Landscape_of_Metabolic_Nutritional_ States_of_Fatty_Acids_in_a_Population/links/578e8bbb08ae81b4466ec9d1/Infinite-Mixture- Dirichlet-Process-Reveals-a-Landscape-of-Metabolic-Nutritional-States-of-Fatty- Acids-in-a-Population.pdf
+* Conference Abstract: James Smith: James Smith, Ronald Galiwango, Argyris Zardilis, Albert Koulman & Julian Grin (2015). Stochastic Process & Mixture Models of Fatty Acid & Lipid Metabolism form a Novel Strategy for Obtaining Status Biomarkers; MMH 2015 1st International Conference on Computational Modeling of Metabolic Health, Inflammation and Diabetes; University of Cambridge, Cambridge, UK. https://www.researchgate.net/profile/James_Smith97/publication/305432116_Infinite_Mixture_Dirichlet_Process_Reveals_a_Landscape_of_Metabolic_Nutritional_States_of_Fatty_Acids_in_a_Population/links/578e8bbb08ae81b4466ec9d1/Infinite-Mixture-Dirichlet-Process-Reveals-a-Landscape-of-Metabolic-Nutritional-States-of-Fatty-Acids-in-a-Population.pdf
 
 * Conference Abstract: Timothy Mwanje Kintu: Timothy Mwanje Kintu, Mugume Twinamatsiko Atwine, Ronald Galiwango, Christine Sekaggya-Wiltshire, Barbara Castelnuovo (2023, August 30). Machine Learning-Based Identification of Predictors Influencing Sub-Therapeutic Rifampicin Concentra- tions in HIV/TB Co-Infected Patients. Deep Learning Indaba 2023. https://openreview.net/ forum?id=GVWNLiqQvG
 

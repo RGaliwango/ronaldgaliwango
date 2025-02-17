@@ -5,9 +5,9 @@ output: html_document
 
 ## Current position(s)
 
-I am currently the Deputy Director and a Bioinformatics/data scientist at [The African Center of Excellence in Bioinformatics and Data Sciences (ACE-Uganda)](https://ace.idi.co.ug/), [The Infectious Diseases Institute](https://idi.mak.ac.ug/), [Makerere University](https://www.mak.ac.ug/), Kampala, Uganda. I also teach on the MSc/PhD Bioinformatics programme at [Makerere University](https://www.mak.ac.ug/) hosted at ACE-Uganda.
+I am currently the Deputy Director for the [The African Center of Excellence in Bioinformatics and Data Sciences (ACE-Uganda)](https://ace.idi.co.ug/) located at [The Infectious Diseases Institute](https://idi.mak.ac.ug/), [Makerere University](https://www.mak.ac.ug/), Kampala, Uganda, where I am a bioinformatics scientist and the Data Science Lead. I also teach on the MSc/PhD Bioinformatics programme at [Makerere University](https://www.mak.ac.ug/) hosted at ACE-Uganda.
 
-My research interests lie in using quantitative methodologies (e.g., data science, mathematical modeling, bioinformatics and advanced statistical methodologies etc.) to answer epidemiology research questions as well as address bio-medical and public health problems, with a focus on Antimicrobial Resistance (AMR). This involves using innovative in-silico approaches for designing antimicrobial drug combination therapies, employing bioinformatics techniques to identify One-Health AMR transmission pathways, utilizing data science methodologies to guide antimicrobial stewardship initiatives and using machine learning techniques to predict clinical outcomes of patients with drug resistant infections. I also have a strong passion for training and mentorship having benefited from both. I believe in building a critical mass of quantitative scientists so as to redress the capacity gap and to perform and complete projects with immediate relevance to national and regional health issues.
+My research encompasses using quantitative methodologies (machine learning, mathematical modeling and simulation, bioinformatics and advanced statistical methodologies) to answer epidemiology research questions as well as address bio-medical and public health problems, with a focus on Antimicrobial Resistance (AMR) and Epidemic Modelling. I also have a strong passion for training and mentorship, contributing to various training programmes in the country.
 
 ## Professional Experience/Previous Positions
 
@@ -36,7 +36,11 @@ I also hold a first-class honors undergraduate degree (mathematics major, statis
 
 ## Other training, workshops, short courses and conferences attended
 
-I attended the Physiologically based pharmacokinetic (PBPK) modelling Workshop - Kampala, Uganda; Application of Physiologically based pharmacokinetic (PBPK) modelling to optimize pharmacotherapy in pregnant and breastfeeding women.
+I attended the  WHO Health Emergencies Programme course entitled [Pandemic planning: Getting “PRET” for the next pandemic](https://www.who.int/publications/m/item/pandemic-planning-getting-pret-for-the-next-pandemic) (2025).
+
+I attended the the [AlphaFold Education Summit](https://www.ebi.ac.uk/training/events/alphafold-education-summit-1/) (2025).
+
+I attended the Physiologically based pharmacokinetic (PBPK) modelling Workshop - Kampala, Uganda; Application of Physiologically based pharmacokinetic (PBPK) modelling to optimize pharmacotherapy in pregnant and breastfeeding women (2024).
 
 I attended the Infectious Disease Modelling Course - by the GeMVi Team, University of Warwick (2020-2021); Workshop 1: Mathematical deterministic modelling; Workshop 2: Use of maximum likelihood estimation to analyse super-spreading behaviour in novel disease outbreaks; Workshop 3: Stochastic Modeling -the Gillespie method; Workshop 4: Modelling Spatial Spread.
 
@@ -56,7 +60,7 @@ I have also done a short course in High-performance computing (HPC) and Python L
 
 ## Research Interests
 
-My research interests lie in using quantitative methodologies (e.g., data science, mathematical modeling, bioinformatics and advanced statistical methodologies etc.) to answer epidemiology research questions as well as address bio-medical and public health problems, with a focus on Antimicrobial Resistance (AMR). This involves using innovative in-silico approaches for designing antimicrobial drug combination therapies, employing bioinformatics techniques to identify One-Health AMR transmission pathways, utilizing data science methodologies to guide antimicrobial stewardship initiatives and using machine learning techniques to predict clinical outcomes of patients with drug resistant infections. I also have a strong passion for training and mentorship having benefited from both. I believe in building a critical mass of quantitative scientists so as to redress the capacity gap and to perform and complete projects with immediate relevance to national and regional health issues.
+My research interests lie in using quantitative methodologies (machine learning, mathematical modeling and simulation, bioinformatics and advanced statistical methodologies) to answer epidemiology research questions as well as address bio-medical and public health problems, with a focus on Antimicrobial Resistance (AMR) and Epidemic Modelling. I also have a strong passion for training and mentorship, contributing to various training programmes in the country.
 
 ## Notable Skills
 
@@ -78,6 +82,7 @@ My research interests lie in using quantitative methodologies (e.g., data scienc
 
 ## Awards, distinctions and prizes
 
+* Presentation (Panelist) at the Plenary Session Early Career Researchers' Theme: Nurturing the Next Generation of Data Science Leaders for African Health Sector; Fourth Meeting of the DS-I Africa Consortium (16-22 November 2024), The Ravenala Attitude Hotel.
 * Presentation (Panelist) at the Advisory Board Meeting of the NIH Fogarty International Center - How I became an early career data scientist + Perspectives on the impact of programs like DS-I Africa & H3Africa: Opportunities & challenges (2022).
 * Postdoc fellow, Fogarty-NIH funded ”HIV and co-infections in Uganda” international research training programme (2022-2023) (Award Number 2D43TW009771-06).
 * BRecA (Nurturing Genomics and Bioinformatics Research Capacity in Africa) Postdoctoral Fellowship Award, Makerere University; funded by the NIH Common Fund: NIH-Forgaty International Center (2020-2021) (Award Number U2RTW010627)
